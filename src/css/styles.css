@@ -494,6 +494,16 @@
 
 /****************************prizes*************** */
 
+.prize-cards {
+    margin-left: 80px;
+    position: static;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    /* grid-gap: 30px; */
+}
+
 .prize {
     width: 90%;
     height: 75%;
@@ -531,6 +541,7 @@
 
 .prize_title {
     margin-bottom: 8px;
+    font-weight: 700;
 }
 
 .prize-info button {
@@ -601,6 +612,35 @@
     column-gap: 8vh;
     padding: 10vh 11vw;
 }
+
+/* **************** Prizes *************** */
+
+.prize-heading {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    width: 340px;
+}
+
+.prize-heading p {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.prize-heading .heading {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.prize-heading img {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    width: 170px;
+    height: 170px;
+}
+
 
 /** ***************** FAQs ****************** */
 
@@ -712,6 +752,10 @@
     .img-section img {
         height: 80vh;
     }
+    .prize-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width:1227px) {
@@ -729,7 +773,7 @@
         height: 74vh;
     }
     .cards {
-        margin-left: 40px;
+        margin-left: 80px;
         position: static;
         padding-top: 40px;
         display: grid;
@@ -739,10 +783,17 @@
     }
 }
 
-@media screen and (max-width:876px) {
-    .cards {
-        margin: 15px;
+@media screen and (max-width:924px) {
+    .prize-cards {
+        display: grid;
+        grid-template-columns: 1fr
     }
+}
+
+@media screen and (max-width:876px) {
+    /* .cards {
+        margin: 15px;
+    } */
     .card_title {
         font-size: 25px;
     }
@@ -775,15 +826,16 @@
     }
     .card-img img {
         width: 133px;
-        margin-left: 13%;
         height: 128px;
     }
     #About-heading>h2 {
         font-size: 40px;
     }
     .content {
-        padding: 0px;
-        position: inherit;
+        padding-top: 5px;
+    }
+    .article {
+        padding: 0px 0px;
     }
     .content .article p {
         font-size: 16px;
