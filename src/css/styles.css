@@ -729,6 +729,55 @@
     /* Unicode character for "minus" sign (-) */
 }
 
+/** ***************** Contact Us ****************** */
+.contactus-section{
+    background-color: #1B1E23;
+    padding-top: 15vh;
+}
+
+#contact-heading{
+    background-color: #E5A2DD;
+    padding-left: 4vw;
+}
+
+#contact-heading>span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.5vw;
+    color: #1F2631;
+}
+
+.fa-globe, .fa-envelope, .fa-phone{
+    padding-top: 7px;
+    color: #E5A2DD;
+}
+
+
+.contact-container{
+    margin-top: 8vh;
+    margin-left: 3vw;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7vh;
+}
+
+.contact-container>*{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+}
+
+.contact-container a{
+    color: white !important ;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 43px;
+}
+
 @media screen and (max-width:1441px) {
     .content .article p {
         font-size: 18px;
