@@ -504,8 +504,8 @@
 }
 
 .prize {
-    width: 90%;
-    height: 65%;
+    width: 85%;
+    height: 62%;
     background-color: rgba(248, 245, 255, 1);
     border-radius: 20px;
     margin-top: 35px;
@@ -556,8 +556,6 @@
 .prize-heading {
     display: flex;
     font-size: 30px;
-    justify-content: space-between;
-    width: 340px;
 }
 
 .prize-heading p {
@@ -568,7 +566,7 @@
 }
 
 .prize-heading .heading {
-    margin-top: 20px;
+    margin-left: 12px;
     height: 100px;
 }
 
