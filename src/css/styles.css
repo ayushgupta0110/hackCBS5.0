@@ -10,7 +10,7 @@
 
 .home_container {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background: #1F2631;
     display: flex;
     flex-direction: column;
@@ -22,13 +22,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3%;
 }
 
 .home_hackCBS>h1 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 190px;
+    font-size: 14vw;
     line-height: 230px;
     color: #F8F5FF;
 }
@@ -37,7 +38,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 37px;
+    font-size: 3vw;
     line-height: 43px;
     color: #F8F5FF;
     margin-top: -35px;
@@ -48,7 +49,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
-    font-size: 260px;
+    font-size: 19vw;
     line-height: 346px;
     padding-left: 2rem;
     background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
@@ -65,14 +66,16 @@
     font-size: 35px;
     /* line-height: 47px; */
     color: #F8F5FF;
+    margin-top: 5%;
 }
 
 .home_button-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
     width: 40%;
+    margin-bottom: 10%;
 }
 
 .button_register {
@@ -86,7 +89,7 @@
     padding: 1.1rem 4rem;
     color: #FFFFFF;
     background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
-    border-radius: 5px;
+    border-radius: 12px;
     border: none !important;
 }
 
@@ -99,13 +102,11 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    padding: 0.5rem 4rem;
+    padding: 0.7rem 4rem;
     color: #FFFFFF;
     background: #1F2631;
-    border-radius: 15px;
-    border: 4px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(92.3deg, #FC5FD9 0%, #8D5DF5 40.52%);
+    border-radius: 12px;
+    border: 3px #cb5ee5 solid;
 }
 
 
@@ -170,7 +171,7 @@
 .img-section img {
     width: 100%;
     /* height: auto; */
-    height: 90vh;
+    height: 110vh;
 }
 
 .content .article p {
@@ -398,7 +399,7 @@
 }
 
 .workshop-card-container {
-    padding: 8vh 5vw;
+    padding: 12vh 5vw;
     display: grid;
     grid-template-columns: auto auto auto;
     row-gap: 4%;
@@ -491,6 +492,14 @@
     text-decoration: none;
 }
 
+
+
+/****************************Themes*************** */
+
+
+.container-themes{
+    margin-top: 2vw;
+}
 
 /****************************prizes*************** */
 
