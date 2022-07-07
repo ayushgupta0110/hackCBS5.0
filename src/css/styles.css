@@ -964,14 +964,14 @@ h6 {
 /** ***************** Contact Us ****************** */
 
 .contactus-section {
-    background-color: #1B1E23;
-    padding-top: 15vh;
+    background-color: #1f2631;
+    padding-top: 10vh;
     position: relative;  /*  */
-    padding-bottom: 20vh;
+    padding-bottom: 8vh;
 }
 
 #contact-heading {
-    background-color: #E5A2DD;
+    background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);;
     padding-left: 4vw;
     z-index: 2;
     position: relative;
@@ -1018,10 +1018,10 @@ h6 {
 
 #contact-man-img{
     position: absolute;
-    top: 16vh;
+    top: 12vh;
     right: 1vw;
     z-index: 3;
-    width: 25vw;
+    width: 32vw;
     height: auto;
 }
 
