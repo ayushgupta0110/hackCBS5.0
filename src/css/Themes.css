@@ -22,7 +22,7 @@
 
 .container-themes .themes-card {
     position: relative;
-    width: 400px;
+    width: 430px;
     height: 270px;
     border-radius: 15px;
     margin: 15px;
@@ -80,6 +80,20 @@
     color: #777;
     z-index: 1;
     transition: 0.5s;
+}
+
+@media screen and (max-width:1385px) {
+    .container-themes .themes-card {
+        position: relative;
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .container-themes .themes-card {
+        position: relative;
+        width: 268px;
+    }
 }
 
 @media screen and (max-width: 426px) {
