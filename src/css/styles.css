@@ -116,7 +116,7 @@
     width: 100%;
     /* height: 130vh; */
     display: inline-block;
-    margin-top: 35px;
+    margin-top: 80px;
     margin-bottom: 62px;
 }
 
@@ -181,10 +181,20 @@
     text-align: justify;
 }
 
+.content .article .second p {
+    margin-left: 36px;
+    font-size: 27px;
+    margin-top: -11px;
+}
+
 .second {
     display: flex;
-    width: 500px;
+    width: 629px;
     justify-content: space-between;
+}
+
+.second h2 {
+    font-weight: 700;
 }
 
 .second .sq {
@@ -199,7 +209,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 135px;
+    width: 122px;
 }
 
 .second p {
@@ -493,33 +503,32 @@
 }
 
 
-
 /****************************Themes*************** */
 
-
-.container-themes{
+.container-themes {
     margin-top: 2vw;
 }
+
 
 /****************************prizes*************** */
 
 .prize-cards {
-    margin-left: 50px;
+    margin-left: 76px;
     position: static;
     padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     /* grid-gap: 30px; */
+    margin-bottom: 36px;
 }
 
 .prize {
     width: 85%;
-    height: 62%;
-    background-color: rgba(248, 245, 255, 1);
+    height: 91%;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin-top: 35px;
-    margin-bottom: 140px;
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.25);
 }
 
@@ -591,6 +600,10 @@
 
 /** ***************** OUR SPONSORS *****************  */
 
+.sponsor-section {
+    margin-top: 134px;
+}
+
 .major-sponsors {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -623,7 +636,7 @@
     border-radius: 8px;
 }
 
-#sponsor-card{
+#sponsor-card {
     height: 150px;
 }
 
@@ -764,12 +777,14 @@
     padding-bottom: 50px;
 }
 
-.footer-container{
+.footer-container {
     background-color: #1F2631;
 }
 
-.footer-logo{
+.footer-logo {
     height: 160px;
+    padding-left: 50px;
+    margin-right: 80px;
 }
 
 .footer_bottom {
@@ -800,7 +815,8 @@
 
 .btn_get:hover {
     color: #fff;
-    background: #6754e2;
+    /* background: #6754e2; */
+    background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
     border-color: #6754e2;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -817,7 +833,8 @@ button:focus {
 }
 
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
-    color: #5e2ced;
+    color: #9a60e0;
+    /* background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%); */
 }
 
 .new_footer_top .f_widget.about-widget .f_list li {
@@ -861,6 +878,10 @@ button:focus {
     transition: all 0.2s linear;
 }
 
+.f_social_icon {
+    width: 206px;
+}
+
 .f_social_icon img {
     width: 30px;
     height: 30px;
@@ -893,12 +914,10 @@ button:focus {
 
 .btn_get_two:hover {
     background: transparent;
-    color: #5e2ced;
 }
 
 .new_footer_top .f_social_icon a:hover {
-    background: #5e2ced;
-    border-color: #5e2ced;
+    background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
     color: white;
 }
 
@@ -976,12 +995,14 @@ h6 {
 .contactus-section {
     background-color: #1f2631;
     padding-top: 10vh;
-    position: relative;  /*  */
+    position: relative;
+    /*  */
     padding-bottom: 8vh;
 }
 
 #contact-heading {
-    background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);;
+    background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
+    ;
     padding-left: 4vw;
     z-index: 2;
     position: relative;
@@ -1026,7 +1047,7 @@ h6 {
     line-height: 43px;
 }
 
-#contact-man-img{
+#contact-man-img {
     position: absolute;
     top: 12vh;
     right: 1vw;
@@ -1035,7 +1056,7 @@ h6 {
     height: auto;
 }
 
-#contact-top-right-img{
+#contact-top-right-img {
     position: absolute;
     top: 0;
     right: 0;
@@ -1044,14 +1065,14 @@ h6 {
     height: auto;
 }
 
-#contact-bottom-mid-img{
+#contact-bottom-mid-img {
     position: absolute;
     bottom: 0;
     width: 25vw;
     height: auto;
 }
 
-#contact-top-left-img{
+#contact-top-left-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -1059,6 +1080,7 @@ h6 {
     width: 25vw;
     height: auto;
 }
+
 
 /* ********** Media ************* */
 
