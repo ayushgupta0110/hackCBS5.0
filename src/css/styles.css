@@ -733,11 +733,15 @@
 .contactus-section{
     background-color: #1B1E23;
     padding-top: 15vh;
+    position: relative;  /*  */
+    padding-bottom: 20vh;
 }
 
 #contact-heading{
     background-color: #E5A2DD;
     padding-left: 4vw;
+    z-index: 2;
+    position: relative;
 }
 
 #contact-heading>span{
@@ -777,6 +781,42 @@
     font-size: 2vw;
     line-height: 43px;
 }
+
+#contact-man-img{
+    position: absolute;
+    top: 16vh;
+    right: 1vw;
+    z-index: 3;
+    width: 25vw;
+    height: auto;
+}
+
+#contact-top-right-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    width: 25vw;
+    height: auto;
+}
+
+#contact-bottom-mid-img{
+    position: absolute;
+    bottom: 0;
+    width: 25vw;
+    height: auto;
+}
+
+#contact-top-left-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 25vw;
+    height: auto;
+}
+
+/* ********** Media ************* */
 
 @media screen and (max-width:1441px) {
     .content .article p {
