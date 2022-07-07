@@ -270,7 +270,7 @@
 .side-decorator {
     display: flex;
     flex-direction: column;
-    row-gap: 1vh;
+    row-gap: 0.7vh;
     justify-content: center;
 }
 
@@ -292,19 +292,24 @@
     border-radius: 0px 50px 50px 0px;
 }
 
+#pink-decorator>* {
+    background: #FC5FB0;
+    border-radius: 0px 50px 50px 0px;
+}
+
 #rect-1 {
     width: 7vw;
-    height: 1.5vw;
+    height: 1.2vw;
 }
 
 #rect-2 {
     width: 5vw;
-    height: 1.5vw;
+    height: 1.1vw;
 }
 
 #rect-3 {
     width: 6vw;
-    height: 1.5vw;
+    height: 1.2vw;
 }
 
 #glimpse-heading>h2 {
@@ -469,6 +474,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-decoration: none;
+
 }
 
 #workshop-card-button>span {
@@ -546,6 +553,67 @@
     border-radius: 12px;
     font-size: 20px;
 }
+/** ***************** OUR SPONSORS *****************  */
+.major-sponsors{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap:5vw;
+    column-gap: 10vh;
+    padding: 15vh 8vw;  
+}
+
+.sponsor-container{
+    text-align: center;
+    
+}
+
+.sponsor-container>p, #sponsor-head{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+    color: #333538;
+}
+
+#sponsor-card, #sponsor-card-min, #sponsor-edu-card{
+    height: 180px;
+    margin-top: 10px;
+    box-shadow: 1px 2px 10px 2px rgb(0 0 0 / 40%);
+    background: linear-gradient(127deg, #fff6fd 0%, #fde4f7 88.57%);
+    border-radius:15px;
+}
+
+#sponsor-min{
+    height: 120px;
+}
+
+#sponsor-edu-card{
+    height: 150px;
+}
+
+.general-sponsors{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap:3vw;
+    column-gap: 4vh;
+    padding: 10vh 4vw;
+}
+
+.general-sponsors{
+    text-align: center;
+}
+
+
+.education-partners{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap:2vw;
+    column-gap: 8vh;
+    padding: 10vh 11vw;
+}
+
+/* **************** Prizes *************** */
 
 .prize-heading {
     display: flex;
@@ -662,6 +730,7 @@
     /* Unicode character for "minus" sign (-) */
 }
 
+<<<<<<< HEAD
 
 /*************footer start *****************/
 
@@ -886,6 +955,57 @@ h6 {
 
 /*************footer End*****************/
 
+=======
+/** ***************** Contact Us ****************** */
+.contactus-section{
+    background-color: #1B1E23;
+    padding-top: 15vh;
+}
+
+#contact-heading{
+    background-color: #E5A2DD;
+    padding-left: 4vw;
+}
+
+#contact-heading>span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.5vw;
+    color: #1F2631;
+}
+
+.fa-globe, .fa-envelope, .fa-phone{
+    padding-top: 7px;
+    color: #E5A2DD;
+}
+
+
+.contact-container{
+    margin-top: 8vh;
+    margin-left: 3vw;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7vh;
+}
+
+.contact-container>*{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+}
+
+.contact-container a{
+    color: white !important ;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 43px;
+}
+
+>>>>>>> 2638738150a820d0bb0570079da8478d3594032b
 @media screen and (max-width:1441px) {
     .content .article p {
         font-size: 18px;
