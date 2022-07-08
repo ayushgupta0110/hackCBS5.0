@@ -175,7 +175,7 @@
 }
 
 .content .article p {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.5;
     margin-bottom: 21px;
     text-align: justify;
@@ -183,7 +183,6 @@
 
 .content .article .second p {
     margin-left: 36px;
-    font-size: 27px;
     margin-top: -11px;
 }
 
@@ -194,14 +193,14 @@
 }
 
 .second h2 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .second .sq {
     background: rgb(175, 103, 226);
     border-radius: 25%;
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     margin-bottom: 10px;
 }
 
@@ -881,7 +880,7 @@ button:focus {
 }
 
 .f_social_icon {
-    width: 206px;
+    width: 356px;
 }
 
 .f_social_icon img {
@@ -919,8 +918,9 @@ button:focus {
 }
 
 .new_footer_top .f_social_icon a:hover {
-    background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
-    color: white;
+    background: #d9b7eb;
+    transition: 1.2s;
+    /* color: white; */
 }
 
 .new_footer_top .f_social_icon a+a {
@@ -1237,7 +1237,7 @@ h6 {
     }
 }
 
-@media screen and (max-width : 425px) {
+@media screen and (max-width: 425px) {
     .row {
         display: flex;
         justify-content: space-between;
@@ -1246,25 +1246,23 @@ h6 {
         flex-direction: column;
         padding-left: 10px;
     }
-    .social{
+    .social {
         text-align: center;
     }
-    .social_1{
+    .social_1 {
         text-align: center;
     }
-    .social_2{
+    .social_2 {
         text-align: center;
     }
-    .footer-logo{
+    .footer-logo {
         padding-left: 0px;
     }
     .new_footer_top .f_social_icon a {
         width: 33px;
         height: 38px;
-        
     }
-    
-    .prize-cards{
+    .prize-cards {
         width: 50%;
         margin-left: 25%;
         margin-bottom: -10%;
@@ -1278,11 +1276,9 @@ h6 {
         width: 147px;
         height: 141px;
     }
-    
-    
 }
 
-@media screen and (max-width : 767px) {
+@media screen and (max-width: 767px) {
     .row {
         display: flex;
         justify-content: space-between;
@@ -1290,40 +1286,32 @@ h6 {
         margin: 0px;
         flex-direction: column;
         padding-left: 10px;
-        
     }
-    .social{
+    .social {
         text-align: center;
     }
-    .social_1{
+    .social_1 {
         text-align: -webkit-center;
     }
-   
-    .footer-logo{
+    .footer-logo {
         padding-left: 0px;
     }
-    .prize-cards{
+    .prize-cards {
         width: 88%;
         margin-left: 18%;
     }
-   
-    }
-
-.social_icon{
-    display: table-row-group;
-
 }
 
-
+.social_icon {
+    display: table-row-group;
+}
 
 @media screen and (max-width: 425px) {
     .container-themes .themes-card .theme-box {
-        
         width: 15rem;
         height: 15rem;
     }
     .container-themes .themes-card .theme-box .theme-content {
-       
         width: 15rem;
     }
-  }
+}
