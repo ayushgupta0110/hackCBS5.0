@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 29vh;
     font-family: "Poppins", sans-serif;
 }
 
@@ -19,15 +19,32 @@
     max-width: 1830px;
     flex-wrap: wrap;
 }
-
+@media screen and (max-width: 767px){
+.col1{
+    
+    float:left ;
+    width: 50%;
+    margin-left: -40px;
+}
+.col2{
+    
+    float:right ;
+    width: 50%;
+    margin-left: -40px;
+}}
 .container-themes .themes-card {
     position: relative;
     width: 430px;
-    height: 270px;
+    height: 200px;
     border-radius: 15px;
     margin: 15px;
 }
-
+@media screen and (max-width: 500px){
+.container-themes .themes-card .theme-box{
+    width: 100px;
+    height: 100px;
+}
+}
 .container-themes .themes-card .theme-box {
     position: absolute;
     top: 0;
@@ -41,8 +58,22 @@
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    
 }
-
+@media screen and (max-width: 425px) {
+    .container-themes .themes-card .theme-box {
+        
+        width: 15rem;
+        height: 15rem;
+    }
+    .container-themes .themes-card .theme-box .theme-content {
+       
+        width: 15rem;
+    }
+    .container-themes .themes-card {
+        margin-left: -4.4rem;
+    }
+  }
 .container-themes .themes-card:hover .theme-box {
     transform: translateY(-25px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
@@ -52,6 +83,7 @@
     padding: 20px;
     text-align: center;
     background-color: transparent;
+    width: 15rem;
 }
 
 .container-themes .themes-card .theme-box .theme-content h4 {
@@ -102,4 +134,32 @@
         width: 25rem;
         height: 16.875rem;
     }
+}
+@media screen and (max-width: 767px) {
+    .container-themes .themes-card .theme-box {
+        
+        width: 20rem;
+        height: 20rem;
+    }
+    .container-themes .themes-card .theme-box .theme-content {
+       
+        width: 20rem;
+    }
+  }
+@media screen and (max-width: 601px){
+.container-themes .themes-card {
+    position: relative;
+    width: 230px;
+}}
+@media screen and (max-width: 520px){
+    .container-themes .themes-card {
+        position: relative;
+        width: 200px;
+    }}
+ @media screen and (max-width: 425px){
+    .container-themes .themes-card .theme-box {
+        width: 14rem;
+        height: 14rem;
+    }
+  
 }
