@@ -1349,9 +1349,7 @@ h6 {
     width: 128%;
     margin-left: 6px;
 }
-.second{
-    height:43vh;
-}}
+}
 @media screen and (max-width: 900px){
     .img-section img {
         height: 46vh;
@@ -1401,7 +1399,7 @@ h6 {
 @media screen and (max-width: 476px)
 {.second {
     justify-content: inherit;
-    width: 226px;
+    width: 180px;
 }
 .second h2,p{
     font-size: 3rem;
