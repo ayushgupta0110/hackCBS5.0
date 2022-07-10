@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/***********************NAVBAR**************************/
 
 /************************ Banner ****************************/
 
@@ -22,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 .home_hackCBS>h1 {
@@ -63,7 +64,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 3rem;
     /* line-height: 47px; */
     color: #F8F5FF; 
     margin-top: 3%;
@@ -73,7 +74,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 40%;
     margin-bottom: 10%;
 }
