@@ -191,7 +191,7 @@
 .second {
     display: flex;
     width: 629px;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .second h2 {
@@ -216,6 +216,43 @@
 .second p {
     margin-left: 50px;
     /* font-size: 30px; */
+}
+
+.date{
+    margin-left: 20%;
+}
+
+/*********************STATS*******************/
+
+.about-us-icons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+}
+.stat-image{
+    text-align: center;
+}
+
+lord-icon{
+    height: 13rem;
+    width: 13rem;
+}
+
+.stats-text{
+    /* position: relative; */
+    /* z-index: 1; */
+    /* top:173px; */
+    color: #1f2631;
+    text-align: center;
+    padding : 1rem;
+}
+.stats-text span{
+    color: #3282b8;
 }
 
 
@@ -1129,10 +1166,10 @@ h6 {
         grid-template-columns: repeat(3, 1fr);
     }
     .date {
-        margin-left: 34%;
+        margin-left: 20%;
     }
     .content .article .second p {
-        width: 41%;
+        width: 90%;
         margin-bottom: 5%;
     }
 }
