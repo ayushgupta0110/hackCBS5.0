@@ -1071,7 +1071,7 @@ h6 {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    row-gap: 7vh;
+    row-gap: 1.5vw;
 
     position: relative;
     z-index: 2;  /* To prevent image overlapping on text */
@@ -1121,12 +1121,12 @@ h6 {
     height: auto;
 }
 
-#contact-bottom-mid-img {
+/* #contact-bottom-mid-img {
     position: absolute;
     bottom: 0;
     width: 25vw;
     height: auto;
-}
+} */
 
 #contact-top-left-img {
     position: absolute;
