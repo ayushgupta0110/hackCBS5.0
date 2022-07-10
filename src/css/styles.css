@@ -185,6 +185,7 @@
 .content .article .second p {
     margin-left: 36px;
     margin-top: -11px;
+    margin-bottom: 0px;
 }
 
 .second {
@@ -1092,7 +1093,7 @@ h6 {
         font-size: 18px;
     }
     .img-section img {
-        height: 85vh;
+        height: 80vh;
     }
 }
 
@@ -1107,28 +1108,45 @@ h6 {
         padding-top: 40px;
         grid-gap: 0px;
     }
-    .img-section img {
-        height: 80vh;
-    }
+    
     .prize-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    .date {
+        margin-left: 34%;
+    }
+    .content .article .second p {
+        width: 41%;
+        margin-bottom: 5%;
+    }
 }
+@media screen and (max-width:1041px)    {
+    .date{
+        margin-left: 30%;
+        width: 50%;
+    }
+    .content .article .second p {
+        width: 97%;
+        margin-bottom: 0;
+    }
+    
+}
+
 
 @media screen and (max-width:1227px) {
     .home_hackCBS>h1 {
         font-size: 150px;
     }
     .article {
-        width: 95%;
+        width: 105%;
         margin-right: 15px;
     }
     .img-section {
         width: 42%;
     }
     .img-section img {
-        height: 74vh;
+        height: 66vh;
     }
     .cards {
         margin-left: 50px;
@@ -1315,4 +1333,77 @@ h6 {
     .container-themes .themes-card .theme-box .theme-content {
         width: 15rem;
     }
+    .content{
+        font-size: 4rem;
+    }
+    .second{
+        width: 200px;
+    }
+    .h2, h2 {
+        font-size: 20px;
+    }
+    
+
+}
+@media screen and (max-width: 545px) {
+.article {
+    width: 128%;
+    margin-left: 6px;
+}
+}
+@media screen and (max-width: 900px){
+    .img-section img {
+        height: 46vh;
+    width: 31.3vh;
+}
+    .section{
+        font-size: 1rem;
+    }}
+@media screen and (min-width: 900px){
+     
+        .section{
+            font-size: 1rem;
+        }}
+@media screen and (min-width:1500px) {
+        .img-section {
+            float: right;
+            width: 73rem;
+        }}
+        @media screen and (max-width:890px) {
+            .date{
+                max-width: fit-content;
+            }
+        }
+ @media screen and (max-width:734px) {
+.second{
+    justify-content:inherit;
+} 
+.date{
+    margin-right: -45rem;
+}
+.venue{
+    margin-left: 0;
+}
+}
+@media screen and (max-width: 888px){
+.content .article .second p {
+    /* width: 204%; */
+    white-space: nowrap;
+    margin-bottom: 0%; 
+}}
+@media screen and (max-width: 660px)
+{.second {
+    justify-content: inherit;
+    width: 400px;
+}
+}
+@media screen and (max-width: 476px)
+{.second {
+    justify-content: inherit;
+    width: 180px;
+}
+.second h2,p{
+    font-size: 3rem;
+
+}
 }
