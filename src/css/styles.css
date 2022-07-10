@@ -364,13 +364,6 @@ lord-icon {
     justify-content: center;
 }
 
-.glimpses {
-    background-color: #1F2631;
-    padding-top: 15vh;
-    padding-bottom: 20vh;
-    /* Will remove later */
-}
-
 #decorator-headings {
     display: flex;
     flex-direction: row;
@@ -410,73 +403,23 @@ lord-icon {
     color: #F8F5FF;
 }
 
-#glimpse-slider {
-    padding-top: 10vh;
-    display: flex;
-    gap: 20vw;
-    overflow: hidden;
+#glimpses{
+    padding: 50px 50px 20px 0;
+    background-color: #1F2631;
+} 
+
+.glimpses_container1{
+    padding: 50px;
 }
 
-.slide-first {
-    margin-left: -46.5%;
+.glimpses_container2{
+    background-color: #1F2631;
+    padding: 0 250px 20px 250px;
 }
 
-#glimpse-slider img {
-    display: block;
-    margin: auto;
-    width: 50vw;
-    height: 60vh;
+.glimpses_container2 .active{
+    width: 60vw;
 }
-
-#glimpse-slider-button input {
-    display: none;
-}
-
-.glimpse-slide {
-    transition: 2s;
-}
-
-#glimpse-navigation {
-    padding-top: 15vh;
-    display: flex;
-    column-gap: 5px;
-    justify-content: center;
-}
-
-.glimpse-nav-btn {
-    background-color: rgb(26, 24, 44);
-    padding: 7px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.glimpse-nav-btn:hover {
-    background-color: #F8F5FF;
-}
-
-
-/* !!!!!!!!!!NOT WORKING !!!!!!!!!! */
-
-#slider-1:checked~.slide-first {
-    margin-left: -40%;
-    display: none;
-}
-
-#slider-2:checked~.slide-first {
-    margin-left: -20%;
-}
-
-#slider-3:checked~.slide-first {
-    margin-left: -40%;
-}
-
-#slider-4:checked~.slide-first {
-    margin-left: -60%;
-}
-
-
-/* !!!!!!!!!!NOT WORKING !!!!!!!!!! */
 
 
 /* ***************** WORKSHOPS ****************** */
@@ -829,7 +772,7 @@ lord-icon {
     padding-top: 4px;
 }
 
-.active:after {
+.faq-dropdown-container .active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
