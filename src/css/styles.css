@@ -583,7 +583,7 @@
     font-weight: 700;
     margin: 19px;
     line-height: normal;
-    height: 60px;
+    height: 28px;
 }
 
 .prize-heading .heading {
@@ -1171,7 +1171,7 @@ h6 {
         margin-left: 0px;
     }
     .prize-heading p {
-        height: 41px;
+        height: 32px;
     }
 }
 
