@@ -9,7 +9,7 @@
 /***********************NAVBAR**************************/
 
 .top-navbar {
-    display: flex;
+    /* display: flex; */
 }
 
 .nav {
@@ -18,7 +18,7 @@
 }
 
 .logo {
-    margin-right: 11%;
+    margin-right: 2%;
 }
 
 .buttons {
@@ -27,15 +27,15 @@
 }
 
 .buttons li {
-    margin-right: 4rem;
+    margin-right: 2.5rem;
 }
 
 .buttons a {
     text-decoration: none;
     color: #1F2631;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: 1.4rem;
 }
 
 .buttons a:hover {
