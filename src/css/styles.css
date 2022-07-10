@@ -1023,8 +1023,9 @@ h6 {
 .fa-globe,
 .fa-envelope,
 .fa-phone {
-    padding: 18% 0;
-    color: #E5A2DD; 
+    padding: 16% 0;
+    color: #E5A2DD;
+    font-size: 2vw !important;
 }
 
 .contact-container {
