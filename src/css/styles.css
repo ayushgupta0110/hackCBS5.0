@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/***********************NAVBAR**************************/
 
 /************************ Banner ****************************/
 
@@ -22,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3%;
+    /* margin-top: 2%; */
 }
 
 .home_hackCBS>h1 {
@@ -63,17 +64,17 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 3rem;
     /* line-height: 47px; */
-    color: #F8F5FF;
-    margin-top: 5%;
+    color: #F8F5FF; 
+    margin-top: 3%;
 }
 
 .home_button-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 40%;
     margin-bottom: 10%;
 }
@@ -175,7 +176,7 @@
 }
 
 .content .article p {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.5;
     margin-bottom: 21px;
     text-align: justify;
@@ -183,8 +184,8 @@
 
 .content .article .second p {
     margin-left: 36px;
-    font-size: 27px;
     margin-top: -11px;
+    margin-bottom: 0px;
 }
 
 .second {
@@ -194,14 +195,14 @@
 }
 
 .second h2 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .second .sq {
     background: rgb(175, 103, 226);
     border-radius: 25%;
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     margin-bottom: 10px;
 }
 
@@ -824,7 +825,7 @@ button:focus {
 }
 
 .f_social_icon {
-    width: 206px;
+    width: 356px;
 }
 
 .f_social_icon img {
@@ -862,8 +863,9 @@ button:focus {
 }
 
 .new_footer_top .f_social_icon a:hover {
-    background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
-    color: white;
+    background: #d9b7eb;
+    transition: 1.2s;
+    /* color: white; */
 }
 
 .new_footer_top .f_social_icon a+a {
@@ -1034,7 +1036,7 @@ h6 {
         font-size: 18px;
     }
     .img-section img {
-        height: 85vh;
+        height: 80vh;
     }
 }
 
@@ -1049,28 +1051,45 @@ h6 {
         padding-top: 40px;
         grid-gap: 0px;
     }
-    .img-section img {
-        height: 80vh;
-    }
+    
     .prize-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    .date {
+        margin-left: 34%;
+    }
+    .content .article .second p {
+        width: 41%;
+        margin-bottom: 5%;
+    }
 }
+@media screen and (max-width:1041px)    {
+    .date{
+        margin-left: 30%;
+        width: 50%;
+    }
+    .content .article .second p {
+        width: 97%;
+        margin-bottom: 0;
+    }
+    
+}
+
 
 @media screen and (max-width:1227px) {
     .home_hackCBS>h1 {
         font-size: 150px;
     }
     .article {
-        width: 95%;
+        width: 105%;
         margin-right: 15px;
     }
     .img-section {
         width: 42%;
     }
     .img-section img {
-        height: 74vh;
+        height: 66vh;
     }
     .cards {
         margin-left: 50px;
@@ -1180,7 +1199,7 @@ h6 {
     }
 }
 
-@media screen and (max-width : 425px) {
+@media screen and (max-width: 425px) {
     .row {
         display: flex;
         justify-content: space-between;
@@ -1189,25 +1208,23 @@ h6 {
         flex-direction: column;
         padding-left: 10px;
     }
-    .social{
+    .social {
         text-align: center;
     }
-    .social_1{
+    .social_1 {
         text-align: center;
     }
-    .social_2{
+    .social_2 {
         text-align: center;
     }
-    .footer-logo{
+    .footer-logo {
         padding-left: 0px;
     }
     .new_footer_top .f_social_icon a {
         width: 33px;
         height: 38px;
-        
     }
-    
-    .prize-cards{
+    .prize-cards {
         width: 50%;
         margin-left: 25%;
         margin-bottom: -10%;
@@ -1221,11 +1238,9 @@ h6 {
         width: 147px;
         height: 141px;
     }
-    
-    
 }
 
-@media screen and (max-width : 767px) {
+@media screen and (max-width: 767px) {
     .row {
         display: flex;
         justify-content: space-between;
@@ -1233,40 +1248,105 @@ h6 {
         margin: 0px;
         flex-direction: column;
         padding-left: 10px;
-        
     }
-    .social{
+    .social {
         text-align: center;
     }
-    .social_1{
+    .social_1 {
         text-align: -webkit-center;
     }
-   
-    .footer-logo{
+    .footer-logo {
         padding-left: 0px;
     }
-    .prize-cards{
+    .prize-cards {
         width: 88%;
         margin-left: 18%;
     }
-   
-    }
-
-.social_icon{
-    display: table-row-group;
-
 }
 
-
+.social_icon {
+    display: table-row-group;
+}
 
 @media screen and (max-width: 425px) {
     .container-themes .themes-card .theme-box {
-        
         width: 15rem;
         height: 15rem;
     }
     .container-themes .themes-card .theme-box .theme-content {
-       
         width: 15rem;
     }
-  }
+    .content{
+        font-size: 4rem;
+    }
+    .second{
+        width: 200px;
+    }
+    .h2, h2 {
+        font-size: 20px;
+    }
+    
+
+}
+@media screen and (max-width: 545px) {
+.article {
+    width: 128%;
+    margin-left: 6px;
+}
+}
+@media screen and (max-width: 900px){
+    .img-section img {
+        height: 46vh;
+    width: 31.3vh;
+}
+    .section{
+        font-size: 1rem;
+    }}
+@media screen and (min-width: 900px){
+     
+        .section{
+            font-size: 1rem;
+        }}
+@media screen and (min-width:1500px) {
+        .img-section {
+            float: right;
+            width: 73rem;
+        }}
+        @media screen and (max-width:890px) {
+            .date{
+                max-width: fit-content;
+            }
+        }
+ @media screen and (max-width:734px) {
+.second{
+    justify-content:inherit;
+} 
+.date{
+    margin-right: -45rem;
+}
+.venue{
+    margin-left: 0;
+}
+}
+@media screen and (max-width: 888px){
+.content .article .second p {
+    /* width: 204%; */
+    white-space: nowrap;
+    margin-bottom: 0%; 
+}}
+@media screen and (max-width: 660px)
+{.second {
+    justify-content: inherit;
+    width: 400px;
+}
+}
+@media screen and (max-width: 476px)
+{.second {
+    justify-content: inherit;
+    width: 180px;
+}
+.second h2,p{
+    font-size: 3rem;
+
+}
+}
