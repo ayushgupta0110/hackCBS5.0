@@ -357,6 +357,30 @@ lord-icon {
 
 /* ***************** GLIMPSES ****************** */
 
+#glimpses{
+    background-color: #1F2631;
+} 
+
+.parallax {
+    /* The image used */
+    background-image: url("/assets/images/glimpse-1.png");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.glimpses-bg{
+    padding: 50px 0 20px 0;
+    background-color: #1F2631;
+    opacity: 0.86;
+}
+
 .side-decorator {
     display: flex;
     flex-direction: column;
@@ -403,17 +427,12 @@ lord-icon {
     color: #F8F5FF;
 }
 
-#glimpses{
-    padding: 50px 50px 20px 0;
-    background-color: #1F2631;
-} 
-
 .glimpses_container1{
     padding: 50px;
 }
 
 .glimpses_container2{
-    background-color: #1F2631;
+    /* background-color: #1F2631; */
     padding: 0 250px 20px 250px;
 }
 
