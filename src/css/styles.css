@@ -436,6 +436,10 @@ lord-icon {
     width: 75vw;
 }
 
+.active img{
+    border-radius: 10px;
+}
+
 
 /* ***************** WORKSHOPS ****************** */
 
