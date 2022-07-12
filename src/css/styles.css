@@ -357,10 +357,6 @@ lord-icon {
 
 /* ***************** GLIMPSES ****************** */
 
-#glimpses{
-    background-color: #1F2631;
-} 
-
 .parallax {
     /* The image used */
     background-image: url("/assets/images/glimpse-1.png");
