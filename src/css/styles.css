@@ -1064,7 +1064,7 @@ h6 {
 .fa-envelope,
 .fa-phone {
     padding: 16% 0;
-    color: #E5A2DD;
+    color: #eb8dee;
     font-size: 2vw !important;
 }
 
@@ -1087,13 +1087,31 @@ h6 {
 }
 
 .contact-container a {
-    color: white !important;
+    color: white;
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 400;
     font-size: 2vw;
     line-height: 43px;
+
+
+    background-image: linear-gradient(to right, #ff5bdb,#aa6df8,#8c5cf3 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
+
+.contact-link-style:hover{
+    background-position: 0;
+}
+
+.contact-link-style:hover::before {
+    width: 100%;
+}
+
 
 .contact-icon-circle {
     width: 3.3vw;
