@@ -109,7 +109,7 @@
 
 .home_button-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 1rem;
     width: 40%;
@@ -124,7 +124,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    padding: 1.1rem 4rem;
+    padding: 0.9rem 1.1rem;
     color: #FFFFFF;
     background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
     border-radius: 12px;
@@ -140,7 +140,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    padding: 0.7rem 4rem;
+    padding: 0.7rem 1rem;
     color: #FFFFFF;
     background: #1F2631;
     border-radius: 12px;
@@ -278,8 +278,8 @@
 }
 
 lord-icon {
-    height: 13rem;
-    width: 13rem;
+    height: 8rem;
+    width: 8rem;
 }
 
 .stats-text {
@@ -288,7 +288,7 @@ lord-icon {
     /* top:173px; */
     color: #1f2631;
     text-align: center;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .stats-text span {
