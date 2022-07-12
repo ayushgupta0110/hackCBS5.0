@@ -428,12 +428,12 @@ lord-icon {
 
 .glimpses_container2{
     /* background-color: #1F2631; */
-    padding: 0 80px 20px 80px;
+    padding-left: 10%;
     
 }
 
 .glimpses_container2 .active{
-    width: 75vw;
+    width: 90%;
 }
 
 .active img{
