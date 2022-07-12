@@ -1099,6 +1099,18 @@ h6 {
     height: auto;
 }
 
+#contact-email a{
+    text-decoration: none;
+}
+
+#contact-weblink a{
+    text-decoration: none;
+}
+
+#contact-phone a{
+    text-decoration: none;
+}
+
 #contact-top-right-img {
     position: absolute;
     top: 0;
