@@ -377,7 +377,7 @@ lord-icon {
 
 .glimpses-bg{
     padding: 50px 0 20px 0;
-    background-color: #1F2631;
+    background: rgba(31, 38, 49, 0.86);
     opacity: 0.86;
 }
 
