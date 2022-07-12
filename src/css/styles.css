@@ -246,8 +246,13 @@
 .subpart {
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
-    width: 122px;
+    justify-content: space-around;
+    width: 110px;
+}
+
+.subpart h2{
+    color: #1F2631;
+    font-size: 1.7rem;
 }
 
 .second p {
@@ -321,6 +326,7 @@ lord-icon {
     border-radius: 20px;
     margin-bottom: 100px;
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.25);
+    border: none;
 }
 
 .card:hover {
@@ -342,8 +348,11 @@ lord-icon {
 
 .card-info {
     text-align: center;
-    padding: 4px;
     font-size: large;
+}
+
+.card-info p{
+    color: #1F2631;
 }
 
 .card-info img {
@@ -352,14 +361,18 @@ lord-icon {
 
 .card_title {
     margin: 10px;
+    margin-bottom: 0;
+    color: #1F2631;
+    font-size: 1.5rem;
 }
+
 
 
 /* ***************** GLIMPSES ****************** */
 
 .parallax {
     /* The image used */
-    background-image: url("/assets/images/glimpse-1.png");
+    background-image: url("https://raw.githubusercontent.com/ayushgupta0110/hackCBS5.0/main/assets/images/glimpse-1.png");
   
     /* Set a specific height */
     min-height: 500px;
@@ -373,7 +386,7 @@ lord-icon {
 
 .glimpses-bg{
     padding: 50px 0 20px 0;
-    background: rgba(31, 38, 49, 0.86);
+    background: rgba(31, 38, 49, 0.85);
 }
 
 .side-decorator {
@@ -724,6 +737,7 @@ lord-icon {
     font-style: normal;
     font-weight: 700;
     font-size: 4vw;
+    color: #1F2631;
 }
 
 .hr-line {
