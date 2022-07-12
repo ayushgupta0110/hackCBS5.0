@@ -475,9 +475,8 @@ lord-icon {
     font-weight: 550;
     font-size: 1.6vw;
     line-height: 2vw;
-    margin-bottom: 0;
+    margin-top: 10px;
     color: #1F2631;
-    margin-left: 4%;
 }
 
 #workshop-card-text>h6 {
@@ -486,14 +485,12 @@ lord-icon {
     font-weight: 400;
     font-size: 0.9vw;
     line-height: 2vw;
-    margin-bottom: 20px;
     color: #5F5B65;
-    left: -2%;
-    margin-top: auto;
+    margin-bottom: 0;
 }
 
 #workshop-card-text {
-    margin-left: -20%;
+    margin: 5px auto auto 5px;
 }
 
 #workshop-timing {
