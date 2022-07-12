@@ -116,7 +116,7 @@
     margin-bottom: 10%;
 }
 
-.button_register {
+.button-register {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,11 +127,12 @@
     padding: 0.9rem 1.1rem;
     color: #FFFFFF;
     background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
+    background: linear-gradient(45deg, #f87bdd, #ff69de, #ee36ff, #b51afd, #891bff, #a824ff);
     border-radius: 12px;
     border: none !important;
 }
 
-.button_discord {
+.button-discord {
     /* display: flex; */
     box-sizing: border-box;
     justify-content: center;
@@ -147,6 +148,67 @@
     border: 3px #cb5ee5 solid;
 }
 
+.banner-button-style{
+    border: none;
+    border: 3px #cb5ee5 solid;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.banner-button-style:before{
+    content: '';
+    background: linear-gradient(45deg, #ff5cdc, #ff59db, #ea00ff, #9d06e2, #6f0bda, #8e11e2, #ea00ff, #ff43d6, #ff87e5);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(8px);
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    animation: glowing 20s linear infinite;
+    /* opacity: 0; */
+    transition: opacity .1s ease-in-out;
+    border-radius: 10px;
+}
+
+.banner-button-style:active{
+    color: white;
+}
+
+.banner-button-style:active:after{
+    background: transparent;
+}
+
+.banner-button-style:hover:before{
+    opacity: 1;
+}
+
+.banner-button-style:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1F2631;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.button-register:after {
+    background: transparent;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
 
 /************************ about us  ****************************/
 
@@ -1107,7 +1169,6 @@ h6 {
     font-weight: 400;
     font-size: 2vw;
     line-height: 43px;
-
 
     background-image: linear-gradient(to right, #ff5bdb,#aa6df8,#8c5cf3 50%, white 50%);
     background-size: 200% 100%;
