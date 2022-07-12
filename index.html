@@ -15,9 +15,7 @@
     <link rel=icon type="image/x-icon" href="assets/images/favicon.png" />
     <link rel=manifest href="assets/images/favicon/manifest.html">
 
-    <!-- Custom styling -->
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="src/css/Themes.css">
+
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/8f4546bba1.js" crossorigin="anonymous"></script>
@@ -27,11 +25,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Bootsrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/Themes.css">
     <script src="src/js/faq.js"></script>
+
     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=red" target="_blank">
         <img id="mlh-logo" src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-red.svg" alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a>
 </head>
@@ -82,6 +86,7 @@
                         </li>
 
 
+
                     </ul>
 
                 </div>
@@ -113,7 +118,7 @@
 
     <!-- about us section  -->
 
-    <div class="section">
+    <div id="about-us" class="section">
         <div class="about-us-heading">
             <div id="decorator-headings">
                 <div class="side-decorator" id="purple-decorator">
@@ -205,58 +210,52 @@
     <!-- about us section ends  -->
 
     <!-- Glimpses -->
-    <div class="glimpses">
+    <section id="glimpses" class="parallax">
+        <div class="glimpses-bg">
+            <div id="decorator-headings">
+                <div class="side-decorator" id="purple-decorator">
+                    <div id="rect-1"></div>
+                    <div id="rect-2"></div>
+                    <div id="rect-3"></div>
+                </div>
 
-        <div id="decorator-headings">
-            <div class="side-decorator" id="purple-decorator">
-                <div id="rect-1"></div>
-                <div id="rect-2"></div>
-                <div id="rect-3"></div>
+                <div id="glimpse-heading">
+                    <h2>GLIMPSES</h2>
+                </div>
             </div>
-
-            <div id="glimpse-heading">
-                <h2>GLIMPSES</h2>
-
+            <div id="carouselExampleIndicators" class="carousel slide glimpses_container1" data-bs-ride="true">
+                <div class="carousel-indicators pt-5">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner glimpses_container2">
+                    <div class="carousel-item active rounded-4">
+                        <img src="assets//images/hackathon.jpg" class="d-block w-100" alt="hackCBS glimpse 1">
+                    </div>
+                    <div class="carousel-item rounded-4">
+                        <img src="assets/images/glimpse-2.png" class="d-block w-100" alt="hackCBS glimpse 2">
+                    </div>
+                    <div class="carousel-item rounded-4">
+                        <img src="assets/images/glimpse-1.png" class="d-block w-100" alt="hackCBS glimpse 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-
-        <div id="glimpse-slider">
-            <div class="glimpse-slide slide-first">
-                <img src="assets/images/glimpse-1.png">
-            </div>
-
-            <div class="glimpse-slide">
-                <img src="assets/images/glimpse-2.png" style="border-radius:12px;">
-            </div>
-
-            <div class="glimpse-slide">
-                <img src="assets/images/glimpse-2.png" style="border-radius:12px;">
-            </div>
-
-            <div class="glimpse-slide">
-                <img src="assets/images/glimpse-2.png" style="border-radius:12px;">
-            </div>
-        </div>
-
-        <div id="glimpse-slider-button">
-            <input type="radio" name="radio-btn" id="slider-1">
-            <input type="radio" name="radio-btn" id="slider-2">
-            <input type="radio" name="radio-btn" id="slider-3">
-            <input type="radio" name="radio-btn" id="slider-4">
-        </div>
-
-        <div id="glimpse-navigation">
-            <label for="slider-1" class="glimpse-nav-btn"></label>
-            <label for="slider-2" class="glimpse-nav-btn"></label>
-            <label for="slider-3" class="glimpse-nav-btn"></label>
-            <label for="slider-4" class="glimpse-nav-btn"></label>
-        </div>
-    </div>
+    </section>
     <!-- Glimpses ends -->
 
 
     <!-- cards section starts -->
-    <div class="card-heading">
+    <div id="speakers" class="card-heading">
         <div id="decorator-headings">
             <div class="side-decorator" id="purple-decorator">
                 <div id="rect-1"></div>
@@ -276,7 +275,7 @@
             </div>
             <div class="card-info">
                 <h2 class="card_title">RADHAKRISHNA</h2>
-                <div>Technical Educator</div>
+                <p>Technical Educator</p>
                 <a href="" target="_blank">
                     <img src="./assets/images/elastic.svg" alt="mypic" />
                 </a>
@@ -288,7 +287,7 @@
             </div>
             <div class="card-info">
                 <h2 class="card_title">RADHAKRISHNA</h2>
-                <div>Technical Educator</div>
+                <p>Technical Educator</p>
                 <a href="" target="_blank">
                     <img src="./assets/images/elastic.svg" alt="mypic" />
                 </a>
@@ -300,7 +299,7 @@
             </div>
             <div class="card-info">
                 <h2 class="card_title">RADHAKRISHNA</h2>
-                <div>Technical Educator</div>
+                <p>Technical Educator</p>
                 <a href="" target="_blank">
                     <img src="./assets/images/elastic.svg" alt="mypic" />
                 </a>
@@ -312,7 +311,7 @@
             </div>
             <div class="card-info">
                 <h2 class="card_title">RADHAKRISHNA</h2>
-                <div>Technical Educator</div>
+                <p>Technical Educator</p>
                 <a href="" target="_blank">
                     <img src="./assets/images/elastic.svg" alt="mypic" />
                 </a>
@@ -324,7 +323,7 @@
             </div>
             <div class="card-info">
                 <h2 class="card_title">RADHAKRISHNA</h2>
-                <div>Technical Educator</div>
+                <p>Technical Educator</p>
                 <a href="" target="_blank">
                     <img src="./assets/images/elastic.svg" alt="mypic" />
                 </a>
@@ -336,7 +335,7 @@
             </div>
             <div class="card-info">
                 <h2 class="card_title">RADHAKRISHNA</h2>
-                <div>Technical Educator</div>
+                <p>Technical Educator</p>
                 <a href="" target="_blank">
                     <img src="./assets/images/elastic.svg" alt="mypic" />
                 </a>
@@ -349,7 +348,7 @@
 
 
     <!-- Workshops -->
-    <div class="workshop">
+    <div id="workshops" class="workshop">
         <div id="decorator-headings">
             <div class="side-decorator" id="purple-decorator">
                 <div id="rect-1"></div>
@@ -374,7 +373,7 @@
                 </div>
 
                 <div id="workshop-card-text">
-                    <h6>Polkadot and Getting Started With Substrate</h6>
+                    <h6>Due to semester IV exams ending late, the internships of a lot of students will be extending beyond 20 July, 2022 which is the commencement date of the next semester as it is mandated by few of the firms.</h6>
                 </div>
 
                 <div id="workshop-timing">
@@ -397,7 +396,7 @@
                 </div>
 
                 <div id="workshop-card-text">
-                    <h6>Polkadot and Getting Started With Substrate</h6>
+                    <h6>Due to semester IV exams ending late, the internships of a lot of students will be extending beyond 20 July, 2022 which is the commencement date of the next semester as it is mandated by few of the firms.</h6>
                 </div>
 
                 <div id="workshop-timing">
@@ -420,7 +419,7 @@
                 </div>
 
                 <div id="workshop-card-text">
-                    <h6>Polkadot and Getting Started With Substrate</h6>
+                    <h6>Due to semester IV exams ending late, the internships of a lot of students will be extending beyond 20 July, 2022 which is the commencement date of the next semester as it is mandated by few of the firms.</h6>
                 </div>
 
                 <div id="workshop-timing">
@@ -443,7 +442,7 @@
                 </div>
 
                 <div id="workshop-card-text">
-                    <h6>Polkadot and Getting Started With Substrate</h6>
+                    <h6>Due to semester IV exams ending late, the internships of a lot of students will be extending beyond 20 July, 2022 which is the commencement date of the next semester as it is mandated by few of the firms.</h6>
                 </div>
 
                 <div id="workshop-timing">
@@ -466,7 +465,7 @@
                 </div>
 
                 <div id="workshop-card-text">
-                    <h6>Polkadot and Getting Started With Substrate</h6>
+                    <h6>Due to semester IV exams ending late, the internships of a lot of students will be extending beyond 20 July, 2022 which is the commencement date of the next semester as it is mandated by few of the firms.</h6>
                 </div>
 
                 <div id="workshop-timing">
@@ -489,7 +488,7 @@
                 </div>
 
                 <div id="workshop-card-text">
-                    <h6>Polkadot and Getting Started With Substrate</h6>
+                    <h6>Due to semester IV exams ending late, the internships of a lot of students will be extending beyond 20 July, 2022 which is the commencement date of the next semester as it is mandated by few of the firms.</h6>
                 </div>
 
                 <div id="workshop-timing">
@@ -508,7 +507,7 @@
 
 
     <!-- THEMES  section starts-->
-    <section class="section-dark" style="padding-top:6rem;">
+    <section id="themes" class="section-dark" style="padding-top:6rem;">
         <div id="decorator-headings">
             <div class="side-decorator" id="purple-decorator">
                 <div id="rect-1"></div>
@@ -579,7 +578,7 @@
 
     <!-- Prizes  section starts -->
 
-    <div class="card-heading">
+    <div id="prizes" class="card-heading">
         <div id="decorator-headings">
             <div class="side-decorator" id="purple-decorator">
                 <div id="rect-1"></div>
@@ -680,7 +679,7 @@
     <!-- Prizes section ends -->
 
     <!-- Our sponsors starts -->
-    <div class="sponsor-section">
+    <div id="sponsors" class="sponsor-section">
         <div id="decorator-headings">
             <div class="side-decorator" id="pink-decorator">
                 <div id="rect-1"></div>
@@ -745,7 +744,7 @@
     <!-- Our sponsors ends   -->
 
     <!-- FAQs starts -->
-    <div class="faqs-section">
+    <div id="faq" class="faqs-section">
         <div id="decorator-headings">
             <div class="side-decorator" id="purple-decorator">
                 <div id="rect-1"></div>
@@ -872,7 +871,7 @@
 
     <!-- Contact Us starts -->
 
-    <div class="contactus-section">
+    <div id="contact-us" class="contactus-section">
         <div id="contact-heading">
             <span>CONTACT US</span>
         </div>
@@ -882,22 +881,22 @@
                 <div class="contact-icon-circle">
                     <i class="fa-solid fa-globe"></i>
                 </div>
-                <a href="https://hackcbs.tech">hackcbs.tech</a>
+                <a href="https://hackcbs.tech" class="contact-link-style">hackcbs.tech</a>
             </div>
 
             <div id="contact-email">
                 <div class="contact-icon-circle">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
-                <a href="mailto:sponsorship@hackcbs.tech">sponsorship@hackcbs.tech</a>
+                <a href="mailto:sponsorship@hackcbs.tech" class="contact-link-style">sponsorship@hackcbs.tech</a>
             </div>
 
             <div id="contact-phone">
                 <div class="contact-icon-circle">
                     <i class="fa-solid fa-phone"></i>
                 </div>
-                <a href="tel:+918800455690">Rishabh Sharma<br/>+91 8800455690</a>
-                <a href="tel:+918960043482">Shyaamal Tripathi<br/>+91 8960043482</a>
+                <a href="tel:+918800455690" class="contact-link-style">Rishabh Sharma<br/>+91 8800455690</a>
+                <a href="tel:+918960043482" class="contact-link-style">Shyaamal Tripathi<br/>+91 8960043482</a>
 
             </div>
         </div>
@@ -917,12 +916,12 @@
         <div class="new_footer_top">
             <div class="footer-container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-2 col-md-6">
                         <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                             <img class="footer-logo" src="./assets/images/hackCBS 5 logo.png" alt="logo">
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-2 col-md-6">
                         <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">LINKS</h3>
                             <ul class="list-unstyled f_list">
@@ -934,7 +933,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-2 col-md-6">
                         <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">Resources</h3>
                             <ul class="list-unstyled f_list">
@@ -952,7 +951,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-2 col-md-6">
                         <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">Community</h3>
                             <ul class="list-unstyled f_list">
@@ -963,7 +962,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 social">
+                    <div class="col-lg-2 col-md-6 social">
                         <div class="f_widget social-widget pl_70 wow fadeInLeft social_1" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
                             <div class="social_icon">
                                 <div class="Social_h3">
@@ -994,6 +993,11 @@
     <!-- footer ends -->
 
     <!-- Main ends-->
+
+
+    <!-- Bootstrap CDN Links -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 
 <!--import JS files here -->

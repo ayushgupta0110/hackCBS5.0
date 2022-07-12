@@ -35,7 +35,7 @@
 .container-themes .themes-card {
     position: relative;
     width: 430px;
-    height: 200px;
+    height: 225px;
     border-radius: 15px;
     margin: 15px;
 }
@@ -92,7 +92,7 @@
 
 .container-themes .themes-card .theme-box .theme-content img {
     width: 70%;
-    margin-top:30%;
+    margin-top:15%;
     background-color: transparent;
 }
 
