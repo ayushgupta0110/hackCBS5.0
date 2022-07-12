@@ -372,7 +372,7 @@ lord-icon {
 
 .parallax {
     /* The image used */
-    background-image: url("/assets/images/glimpse-1.png");
+    background-image: url("https://raw.githubusercontent.com/ayushgupta0110/hackCBS5.0/main/assets/images/glimpse-1.png");
   
     /* Set a specific height */
     min-height: 500px;
@@ -386,7 +386,7 @@ lord-icon {
 
 .glimpses-bg{
     padding: 50px 0 20px 0;
-    background: rgba(31, 38, 49);
+    background: rgba(31, 38, 49, 0.85);
 }
 
 .side-decorator {
