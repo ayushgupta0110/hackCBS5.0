@@ -18,6 +18,7 @@ body{
 
 .navbar{
     background-color: #F8F5FF;
+    width: 85%;
 }
 
 .nav-item a {
@@ -31,6 +32,11 @@ body{
 .nav-item a:hover {
     color: #5e2ced;
     text-decoration: none;
+}
+
+#mlh-logo{
+    width: 100%;
+    margin-left: 20%;
 }
 
 #button_list {
@@ -280,9 +286,7 @@ body{
 }
 
 .content .article .second p {
-    margin-left: 36px;
-    margin-top: -11px;
-    margin-bottom: 0px;
+    margin-left: 40px;
 }
 
 .second {
@@ -300,19 +304,18 @@ body{
     border-radius: 25%;
     width: 26px;
     height: 26px;
-    margin-bottom: 10px;
+    margin-top: 3px;
 }
 
 .subpart {
     display: flex;
-    align-items: flex-end;
     justify-content: space-around;
     width: 110px;
 }
 
 .subpart h2 {
     color: #1F2631;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
 }
 
 .second p {
@@ -694,6 +697,13 @@ lord-icon {
     width: 100px;
     height: 100px;
 }
+
+/****************SCHEDULE*********************/
+
+.schedule{
+    width: 100%;
+}
+
 /** ***************** OUR SPONSORS *****************  */
 
 .sponsor-section {
@@ -1246,36 +1256,6 @@ height: auto;
         width: 40%;
         margin-bottom: 10%;
     }
-    /* .button-register {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        padding: 1.1rem 3.5rem;
-        color: #FFFFFF;
-        background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
-        border-radius: 12px;
-        border: none !important;
-    } */
-    /* .button-discord {
-        display: flex;
-        box-sizing: border-box;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        padding: 0.7rem 3.5rem;
-        color: #FFFFFF;
-        background: #1F2631;
-        border-radius: 12px;
-        border: 3px #cb5ee5 solid;
-        margin-left: 4rem;
-    } */
     /************************ about us  ****************************/
     .section {
         width: 100%;
@@ -1336,39 +1316,13 @@ height: auto;
         margin-bottom: 21px;
         text-align: justify;
     }
-    .content .article .second p {
-        margin-left: 36px;
-        margin-top: -11px;
-        margin-bottom: 0px;
-    }
+    
     .second {
         display: flex;
         width: 629px;
         justify-content: flex-start;
     }
-    .second h2 {
-        font-weight: 600;
-    }
-    .second .sq {
-        background: rgb(175, 103, 226);
-        border-radius: 25%;
-        width: 26px;
-        height: 26px;
-        margin-bottom: 10px;
-    }
-    .subpart {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        width: 122px;
-    }
-    .second p {
-        margin-left: 50px;
-        /* font-size: 30px; */
-    }
-    .date {
-        margin-left: 20%;
-    }
+
     /*********************STATS*******************/
     .about-us-icons {
         display: grid;
