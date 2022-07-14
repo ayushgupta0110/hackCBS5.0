@@ -7,15 +7,22 @@
 
 /***********************NAVBAR**************************/
 
+body{
+    background-color: #F8F5FF;
+}
+
 .logo img {
     width: 100px;
     height: 80px;
 }
 
+.navbar{
+    background-color: #F8F5FF;
+}
+
 .nav-item a {
     color: black;
     text-decoration: none;
-    font-weight: 550;
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 2.5vw;
     font-size: 2rem;
@@ -99,7 +106,7 @@
 
 .home_button-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
     width: 40%;
@@ -115,9 +122,10 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    padding: 0.9rem 1.1rem;
+    padding: 0.9rem 3rem;
     color: #FFFFFF;
-    background: linear-gradient(45deg, #f87bdd, #ff69de, #ee36ff, #b51afd, #891bff, #a824ff);
+    /* background: linear-gradient(45deg, #f87bdd, #ff69de, #ee36ff, #b51afd, #891bff, #a824ff); */
+    background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
     border-radius: 12px;
     border: none !important;
 }
@@ -131,7 +139,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 3rem;
     color: #FFFFFF;
     background: #1F2631;
     border-radius: 12px;
@@ -370,7 +378,7 @@ lord-icon {
 .card {
     width: 85%;
     height: 85%;
-    background-color: rgba(248, 245, 255, 1);
+    background: linear-gradient(159.8deg, #F8F5FF 0%, #F0E9FF 88.57%);
     border-radius: 20px;
     margin-bottom: 100px;
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.25);
@@ -1232,13 +1240,13 @@ height: auto;
     }
     .home_button-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         margin-top: 1rem;
         width: 40%;
         margin-bottom: 10%;
     }
-    .button_register {
+    /* .button-register {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1246,13 +1254,13 @@ height: auto;
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
-        padding: 1.1rem 4rem;
+        padding: 1.1rem 3.5rem;
         color: #FFFFFF;
         background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
         border-radius: 12px;
         border: none !important;
-    }
-    .button_discord {
+    } */
+    /* .button-discord {
         display: flex;
         box-sizing: border-box;
         justify-content: center;
@@ -1261,13 +1269,13 @@ height: auto;
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
-        padding: 0.7rem 4rem;
+        padding: 0.7rem 3.5rem;
         color: #FFFFFF;
         background: #1F2631;
         border-radius: 12px;
         border: 3px #cb5ee5 solid;
         margin-left: 4rem;
-    }
+    } */
     /************************ about us  ****************************/
     .section {
         width: 100%;
@@ -1404,14 +1412,7 @@ height: auto;
         justify-content: center;
         /* grid-gap: 30px; */
     }
-    .card {
-        width: 85%;
-        height: 85%;
-        background-color: rgba(248, 245, 255, 1);
-        border-radius: 20px;
-        margin-bottom: 100px;
-        box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.25);
-    }
+    
     .card:hover {
         box-shadow: 2px 2px 20px black;
     }
@@ -1576,9 +1577,7 @@ height: auto;
         margin-bottom: 20px;
         color: #5F5B65;
     }
-    #workshop-card-text {
-        margin-left: -20%;
-    }
+    
     #workshop-timing {
         display: flex;
         flex-direction: column;
