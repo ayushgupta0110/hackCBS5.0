@@ -19,6 +19,7 @@ body{
 .navbar{
     background-color: #F8F5FF;
     width: 85%;
+    
 }
 
 .nav-item a {
@@ -422,7 +423,7 @@ lord-icon {
     margin: 10px;
     margin-bottom: 0;
     color: #1F2631;
-    font-size: 1.5rem;
+    font-size: 2.7rem;
 }
 /* ***************** GLIMPSES ****************** */
 
@@ -890,6 +891,14 @@ lord-icon {
     line-height: 20px;
     color: #7f88a6;
     padding: 27px 0px;
+}
+
+.f_list a{
+    font-size: 1.5em;
+}
+
+#archives_heading{
+    margin-top: 10%;;
 }
 
 .new_footer_top .company_widget p {
@@ -1973,6 +1982,21 @@ height: auto;
             left: 100%;
         }
     }
+
+    /***  scroll to top button  *****/
+    #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        padding: 12px 20px;
+        color: white;
+        border-radius: 50%;
+    background:linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
+    font-size: 20px;
+      }
+
+
     /*************footer End*****************/
     /** ***************** Contact Us ****************** */
     .contactus-section {
@@ -2307,11 +2331,26 @@ margin: 15px;
         h2 {
             font-size: 20px;
         }
+
+        .f_list a{
+            font-size: 1.5em;
+        }
+
+        .f_size_18{
+            margin-top: 20%;
+        }
     }
     @media screen and (max-width: 545px) {
         .article {
             width: 128%;
             margin-left: 6px;
+        }
+        .f_list a{
+            font-size: 1.5em;
+        }
+
+        .f_size_18{
+            margin-top: 20%;
         }
     }
     @media screen and (max-width: 900px) {
@@ -2321,6 +2360,13 @@ margin: 15px;
         }
         .section {
             font-size: 1rem;
+        }
+        .f_list a{
+            font-size: 1.5em;
+        }
+
+        .f_size_18{
+            margin-top: 20%;
         }
     }
     @media screen and (min-width: 900px) {
