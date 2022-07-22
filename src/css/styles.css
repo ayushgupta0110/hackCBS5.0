@@ -223,6 +223,7 @@ body{
     display: inline-block;
     margin-top: 80px;
     margin-bottom: 62px;
+    font-size: 13rem;
 }
 
 #About-heading>h2 {
@@ -256,8 +257,8 @@ body{
 .content {
     float: left;
     width: 50%;
-    padding: 40px;
-    /* padding-left: 70px; */
+    /* padding: 40px; */
+    padding-left: 70px;
     padding-right: 70px;
     height: 475px;
     margin-bottom: 70px;
@@ -1208,9 +1209,6 @@ height: auto;
 /* ********** Media ************* */
 
 @media screen and (max-width:1441px) {
-    .content .article p {
-        font-size: 18px;
-    }
     .home_main-text {
         display: flex;
         justify-content: center;
@@ -1265,79 +1263,7 @@ height: auto;
         width: 40%;
         margin-bottom: 10%;
     }
-    /************************ about us  ****************************/
-    .section {
-        width: 100%;
-        /* height: 130vh; */
-        display: inline-block;
-        margin-top: 80px;
-        margin-bottom: 62px;
-    }
-    #About-heading>h2 {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 4vw;
-        /* line-height: 76px; */
-        color: #131314;
-    }
-    .article {
-        position: absolute;
-        width: 80%;
-        /* display: inline-block; */
-        padding: 29px 0px;
-        margin-left: 60px;
-    }
-    .container .title {
-        width: 100%;
-        /* text-align: center; */
-        margin-bottom: 50px;
-    }
-    .container .title h1 {
-        font-size: 35px;
-        color: #23231e;
-    }
-    .content {
-        float: left;
-        width: 50%;
-        padding: 40px;
-        /* padding-left: 70px; */
-        padding-right: 70px;
-        height: 475px;
-        margin-bottom: 70px;
-        position: relative;
-    }
-    .para1 .para2 .para3 {
-        margin-bottom: 10%;
-    }
-    .img-section {
-        float: right;
-        width: 48%;
-    }
-    .img-section img {
-        width: 100%;
-        /* height: auto; */
-        height: 110vh;
-    }
-    .content .article p {
-        font-size: 22px;
-        line-height: 1.5;
-        margin-bottom: 21px;
-        text-align: justify;
-    }
-    
-    .second {
-        display: flex;
-        width: 629px;
-        justify-content: flex-start;
-    }
-
     /*********************STATS*******************/
-    .about-us-icons {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-    }
     .stat {
         display: flex;
         flex-direction: column;
@@ -1360,47 +1286,7 @@ height: auto;
     .stats-text span {
         color: #3282b8;
     }
-    /************************ cards ****************************/
-    .card-heading {
-        /* position: absolute; */
-        margin: 10px 0px 10px;
-        padding-top: 15vh;
-    }
-    .cards {
-        margin-left: 80px;
-        position: static;
-        padding-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        /* grid-gap: 30px; */
-    }
-    
-    .card:hover {
-        box-shadow: 2px 2px 20px black;
-    }
-    .card-img {
-        text-align: center;
-    }
-    .card-img img {
-        object-fit: cover;
-        border-radius: 50%;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        width: 230px;
-        height: 230px;
-    }
-    .card-info {
-        text-align: center;
-        padding: 4px;
-        font-size: large;
-    }
-    .card-info img {
-        width: 30%;
-    }
-    .card_title {
-        margin: 10px;
-    }
+
     /* ***************** GLIMPSES ****************** */
     .side-decorator {
         display: flex;
@@ -2093,18 +1979,18 @@ height: auto;
     }
     /* ********** Media ************* */
     @media screen and (max-width:1441px) {
-        .content .article p {
+        /* .content .article p {
             font-size: 18px;
-        }
+        } */
         .img-section img {
             height: 80vh;
         }
     }
     @media screen and (max-width:1341px) {
         .content .article p {
-            font-size: 16px;
-            padding-right: 10px;
-            margin-right: 10px;
+            font-size: 19px;
+            /* padding-right: 10px; */
+            /* margin-right: 10px; */
         }
         .cards {
             position: static;
@@ -2115,19 +2001,12 @@ height: auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
         }
-        .date {
-            margin-left: 20%;
-        }
         .content .article .second p {
             width: 90%;
             margin-bottom: 5%;
         }
     }
     @media screen and (max-width:1041px) {
-        .date {
-            margin-left: 30%;
-            width: 50%;
-        }
         .content .article .second p {
             width: 97%;
             margin-bottom: 0;
@@ -2137,10 +2016,10 @@ height: auto;
         .home_hackCBS>h1 {
             font-size: 150px;
         }
-        .article {
+        /* .article {
             width: 105%;
             margin-right: 15px;
-        }
+        } */
         .img-section {
             width: 42%;
         }
@@ -2155,10 +2034,6 @@ height: auto;
             grid-template-columns: repeat(3, 1fr);
             justify-content: center;
             grid-gap: 10px;
-        }
-        .card_title {
-            margin: 10px;
-            FONT-SIZE: 25px;
         }
         .prize-heading {
             width: 260px;
@@ -2180,12 +2055,6 @@ height: auto;
         }
     }
     @media screen and (max-width:876px) {
-        /* .cards {
-margin: 15px;
-} */
-        .card_title {
-            font-size: 21px;
-        }
         .card-section {
             margin-top: 40px;
         }
@@ -2197,13 +2066,16 @@ margin: 15px;
     }
     @media screen and (max-width:888px) {
         .content {
-            width: 80%;
+            width: 100%;
         }
         .img-section {
             display: none;
         }
         .card-img img {
             width: 155px;
+        }
+        .article{
+            margin-left: 25px;
         }
     }
     @media screen and (max-width:640px) {
@@ -2225,8 +2097,8 @@ margin: 15px;
         }
         .content .article p {
             font-size: 16px;
-            padding-right: 10px;
-            margin-right: 66px;
+            /* padding-right: 10px; */
+            /* margin-right: 66px; */
         }
     }
     @media screen and (max-width:600px) {
@@ -2241,6 +2113,7 @@ margin: 15px;
         .workshop-card-container {
             grid-template-columns: auto auto;
         }
+
     }
     @media screen and (max-width:375px) {
         .workshop-card {
@@ -2358,9 +2231,6 @@ margin: 15px;
             height: 46vh;
             width: 31.3vh;
         }
-        .section {
-            font-size: 1rem;
-        }
         .f_list a{
             font-size: 1.5em;
         }
@@ -2369,29 +2239,14 @@ margin: 15px;
             margin-top: 20%;
         }
     }
-    @media screen and (min-width: 900px) {
-        .section {
-            font-size: 1rem;
-        }
-    }
+
     @media screen and (min-width:1500px) {
         .img-section {
             float: right;
             width: 73rem;
         }
     }
-    @media screen and (max-width:890px) {
-        .date {
-            max-width: fit-content;
-        }
-    }
     @media screen and (max-width:734px) {
-        .second {
-            justify-content: inherit;
-        }
-        .date {
-            margin-right: -45rem;
-        }
         .venue {
             margin-left: 0;
         }
@@ -2405,9 +2260,9 @@ margin: 15px;
     }
     @media screen and (max-width: 660px) {
         .second {
-            justify-content: inherit;
-            width: 400px;
+            width: 200px;
         }
+
     }
     @media screen and (max-width: 476px) {
         .second {
@@ -2425,3 +2280,22 @@ margin: 15px;
         }
     }
 }
+
+@media screen and (max-width: 1000px){
+ 
+    .card-img img {
+        width: 156px;
+        height: 161px;
+    }
+    .card_title{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .card-img img {
+        width: 111px;
+        height: 108px;
+    }
+}
+
