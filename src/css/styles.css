@@ -294,7 +294,7 @@ body{
 
 .second {
     display: flex;
-    width: 629px;
+    width: 100%;
     justify-content: flex-start;
 }
 
@@ -2066,9 +2066,6 @@ height: auto;
             width: 100%;
             padding-left: 45px;
         }
-        .img-section {
-            display: none;
-        }
         .article{
             margin-left: 25px;
         }
@@ -2078,10 +2075,6 @@ height: auto;
         }
         .date {
             margin-left: 0%;
-        }
-        .second{
-            display: block;
-            margin-top: 5rem;
         }
         .venue{
             margin-bottom: 5rem;
@@ -2108,6 +2101,11 @@ height: auto;
             font-size: 16px;
             /* padding-right: 10px; */
             /* margin-right: 66px; */
+        }
+
+        .prize-cards {
+            display: grid;
+            grid-template-columns: 1fr !important;
         }
     }
     @media screen and (max-width:600px) {
@@ -2154,11 +2152,6 @@ height: auto;
             width: 33px;
             height: 38px;
         }
-        .prize-cards {
-            width: 50%;
-            margin-left: 25%;
-            margin-bottom: -10%;
-        }
         .prize-img img {
             border: 18px solid rgb(249, 139, 225);
             object-fit: fill;
@@ -2189,7 +2182,7 @@ height: auto;
         }
         .prize-cards {
             width: 88%;
-            margin-left: 18%;
+            margin-left: 8%;
         }
     }
     .social_icon {
@@ -2202,9 +2195,6 @@ height: auto;
         }
         .container-themes .themes-card .theme-box .theme-content {
             width: 15rem;
-        }
-        .content {
-            font-size: 4rem;
         }
         .second {
             width: 200px;
@@ -2234,6 +2224,14 @@ height: auto;
         .f_size_18{
             margin-top: 20%;
         }
+
+        .about-us-icons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) !important;
+            grid-template-rows: repeat(3, auto);
+        }
+        
+        
     }
     @media screen and (max-width: 900px) {
         .img-section img {
@@ -2259,6 +2257,9 @@ height: auto;
         .venue {
             margin-left: 0;
         }
+        .img-section{
+            margin-top: 7rem !important;
+        }
     }
     @media screen and (max-width: 888px) {
         .content .article .second p {
@@ -2267,12 +2268,7 @@ height: auto;
             margin-bottom: 0%;
         }
     }
-    @media screen and (max-width: 660px) {
-        .second {
-            width: 200px;
-        }
 
-    }
     @media screen and (max-width: 476px) {
         .second {
             justify-content: inherit;
@@ -2306,7 +2302,7 @@ height: auto;
 @media screen and (max-width:924px) {
     .prize-cards {
         display: grid;
-        grid-template-columns: 1fr
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -2321,5 +2317,45 @@ height: auto;
 @media screen and (max-width:1145px){
     .content .article p {
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width:1039px){
+.content {
+    width: 100%;
+    margin-bottom:1rem ;
+    height: 367px;
+}
+.img-section {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10rem;
+}
+.about-us-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+.article {
+    padding: 8px 0px;
+}
+.second{
+    justify-content: space-between;
+}
+
+}
+
+@media screen and (max-width:624px){
+    .img-section {
+        margin-top: 13rem !important;
+    } 
+}
+
+
+@media screen and (max-width:455px){
+    .content .article p {
+        font-size: 14px;
     }
 }
