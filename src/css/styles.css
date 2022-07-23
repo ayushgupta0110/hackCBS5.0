@@ -240,7 +240,7 @@ body{
     width: 80%;
     /* display: inline-block; */
     padding: 29px 0px;
-    margin-left: 60px;
+    margin-left: 45px;
 }
 
 .container .title {
@@ -256,12 +256,12 @@ body{
 
 .content {
     float: left;
-    width: 50%;
+    width: 53%;
     /* padding: 40px; */
     padding-left: 70px;
     padding-right: 70px;
     height: 475px;
-    margin-bottom: 70px;
+    margin-bottom: 15rem;
     position: relative;
 }
 
@@ -272,6 +272,7 @@ body{
 .img-section {
     float: right;
     width: 48%;
+    margin: -5rem;
 }
 
 .img-section img {
@@ -1268,6 +1269,7 @@ height: auto;
     .stat {
         display: flex;
         flex-direction: column;
+        height: 17rem;
     }
     .stat-image {
         text-align: center;
@@ -1964,12 +1966,6 @@ height: auto;
         width: 25vw;
         height: auto;
     }
-    /* #contact-bottom-mid-img {
-position: absolute;
-bottom: 0;
-width: 25vw;
-height: auto;
-} */
     #contact-top-left-img {
         position: absolute;
         top: 0;
@@ -1978,6 +1974,7 @@ height: auto;
         width: 25vw;
         height: auto;
     }
+}
     /* ********** Media ************* */
     @media screen and (max-width:1441px) {
         /* .content .article p {
@@ -2067,12 +2064,27 @@ height: auto;
     @media screen and (max-width:888px) {
         .content {
             width: 100%;
+            padding-left: 45px;
         }
         .img-section {
             display: none;
         }
         .article{
             margin-left: 25px;
+        }
+        .article {
+            position: absolute;
+            width: 82%;
+        }
+        .date {
+            margin-left: 0%;
+        }
+        .second{
+            display: block;
+            margin-top: 5rem;
+        }
+        .venue{
+            margin-bottom: 5rem;
         }
     }
     @media screen and (max-width:640px) {
@@ -2212,7 +2224,7 @@ height: auto;
     }
     @media screen and (max-width: 545px) {
         .article {
-            width: 128%;
+            /* width: 128%; */
             margin-left: 6px;
         }
         .f_list a{
@@ -2268,7 +2280,14 @@ height: auto;
         }
         .second h2,
         p {
-            font-size: 3rem;
+            font-size: 1.5rem;
+        }
+        .cards {
+            margin-left: 3rem !important;
+            margin-right: 1rem !important;
+        }
+        .card_title {
+            font-size: 1.5rem !important;
         }
     }
     @media screen and (max-width: 768px) {
@@ -2276,7 +2295,6 @@ height: auto;
             margin-left: 4rem;
         }
     }
-}
 
 @media screen and (max-width: 1000px){
 
@@ -2300,3 +2318,8 @@ height: auto;
     }
 }
 
+@media screen and (max-width:1145px){
+    .content .article p {
+        font-size: 17px;
+    }
+}
