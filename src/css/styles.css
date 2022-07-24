@@ -117,7 +117,7 @@
     font-size: 20px;
     padding: 0.9rem 1.1rem;
     color: #FFFFFF;
-    background: linear-gradient(45deg, #f87bdd, #ff69de, #ee36ff, #b51afd, #891bff, #a824ff);
+    background: line        ar-gradient(45deg, #f87bdd, #ff69de, #ee36ff, #b51afd, #891bff, #a824ff);
     border-radius: 12px;
     border: none !important;
 }
@@ -161,7 +161,6 @@
     width: calc(100% + 6px);
     height: calc(100% + 6px);
     animation: glowing 20s linear infinite;
-    /* opacity: 0; */
     transition: opacity .1s ease-in-out;
     border-radius: 10px;
 }
@@ -1099,7 +1098,7 @@ h6 {
     column-gap: 2vw;
 }
 
-.contact-container a {
+.contact-link-style {
     color: white;
     font-family: 'Segoe UI';
     font-style: normal;
@@ -1112,7 +1111,7 @@ h6 {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .contact-link-style:hover {
@@ -1178,6 +1177,8 @@ height: auto;
     width: 25vw;
     height: auto;
 }
+
+
 /* ********** Media ************* */
 
 @media screen and (max-width:1441px) {
@@ -1215,11 +1216,11 @@ height: auto;
         font-size: 19vw;
         line-height: 346px;
         padding-left: 2rem;
-        background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
+        /* background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-emphasis-color: transparent;
+        text-emphasis-color: transparent; */
     }
     .home_date-container p {
         font-family: 'Roboto';
@@ -1891,8 +1892,10 @@ height: auto;
         outline: none;
     }
     .new_footer_top .f_widget.about-widget .f_list li a:hover {
-        color: #9a60e0;
-        /* background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%); */
+        background: linear-gradient(to left, #d030e6, #aa6df8, #8c5cf3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
     .new_footer_top .f_widget.about-widget .f_list li {
         margin-bottom: 11px;
@@ -2021,6 +2024,7 @@ height: auto;
         }
     }
     /*************footer End*****************/
+    
     /** ***************** Contact Us ****************** */
     .contactus-section {
         background-color: #1f2631;

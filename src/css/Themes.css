@@ -87,11 +87,13 @@
 }
 
 .container-themes .themes-card .theme-box .theme-content h4 {
-    visibility: hidden;
+    /* visibility: hidden; */
+    padding-top: 2vh;
+    color: black;
 }
 
 .container-themes .themes-card .theme-box .theme-content img {
-    width: 70%;
+    width: 85%;
     margin-top:15%;
     background-color: transparent;
 }
@@ -99,11 +101,11 @@
 .container-themes .themes-card:hover .theme-box .theme-content img {
     padding: 5px;
     background-color: transparent;
-    width: 75%;
+    width: 80%;
 }
 
 .container-themes .themes-card:hover .theme-box .theme-content h4 {
-    color: #fff;
+    color: rgb(48, 48, 48);
     visibility: visible;
     background-color: transparent;
 }
