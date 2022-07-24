@@ -884,8 +884,8 @@ lord-icon {
 
 .footer-logo {
     height: 160px;
-    padding-left: 50px;
-    margin-right: 80px;
+    /* padding-left: 50px; */
+    /* margin-right: 80px; */
 }
 
 .footer_bottom {
@@ -1697,11 +1697,7 @@ height: auto;
     .footer-container {
         background-color: #1F2631;
     }
-    .footer-logo {
-        height: 160px;
-        padding-left: 50px;
-        margin-right: 80px;
-    }
+
     .footer_bottom {
         font-size: 14px;
         font-weight: 300;
@@ -2106,6 +2102,7 @@ height: auto;
         .prize-cards {
             display: grid;
             grid-template-columns: 1fr !important;
+            margin-left: 5rem !important;
         }
     }
     @media screen and (max-width:600px) {
@@ -2270,10 +2267,6 @@ height: auto;
     }
 
     @media screen and (max-width: 476px) {
-        .second {
-            justify-content: inherit;
-            width: 180px;
-        }
         .second h2,
         p {
             font-size: 1.5rem;
@@ -2304,7 +2297,6 @@ height: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 @media screen and (max-width: 680px){
@@ -2316,7 +2308,7 @@ height: auto;
 
 @media screen and (max-width:1145px){
     .content .article p {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 
@@ -2354,8 +2346,14 @@ height: auto;
 }
 
 
-@media screen and (max-width:455px){
+@media screen and (max-width:485px){
     .content .article p {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width:380px){
+    #About-heading>h2 {
+        font-size: 31px;
     }
 }
