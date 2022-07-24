@@ -2174,6 +2174,10 @@ height: auto;
         .swiper {
             height: 300px !important;
         }
+        .swiper .swiper-button-next,
+        .swiper .swiper-button-prev {
+            display: none;
+        }
     }
     @media screen and (max-width:375px) {
         .workshop-card {
