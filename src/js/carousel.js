@@ -17,5 +17,17 @@ window.addEventListener('load', function() {
         autoplay: {
             delay: 3000
         },
+        breakpoints: {
+            // when window width is >= 580px
+            580: {
+                slidesPerView: 1.2,
+                spaceBetween: 0
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 1.5,
+                spaceBetween: 0
+            }
+        }
     });
 });
