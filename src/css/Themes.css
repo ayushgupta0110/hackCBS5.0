@@ -111,7 +111,7 @@
 }
 
 .container-themes .themes-card:hover .theme-box .theme-content h4 {
-    color: #fff;
+    color: rgb(48, 48, 48);
     visibility: visible;
     background-color: transparent;
 }
