@@ -1214,6 +1214,19 @@ height: auto;
     width: 100%;
 }
 
+.swiper .swiper-pagination-bullet {
+    width: 15px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 5px;
+    background: #fff;
+    opacity: 1;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: #B492FF;
+}
+
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
     color: #fff;
