@@ -1,5 +1,5 @@
 window.addEventListener('load', function() {
-    if(screen.width > 580) {
+    if(window.innerWidth > 580) {
         new Swiper(".swiper",{
             effect: "carousel",
             grabCursor: true,
