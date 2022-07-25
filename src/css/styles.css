@@ -897,8 +897,8 @@ lord-icon {
     font-size: 1.5em;
 }
 
-#archives_heading{
-    margin-top: 10%;;
+.archives{
+    margin-left: 5%;
 }
 
 .new_footer_top .company_widget p {
