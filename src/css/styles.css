@@ -176,7 +176,6 @@ body{
     width: calc(100% + 6px);
     height: calc(100% + 6px);
     animation: glowing 20s linear infinite;
-    /* opacity: 0; */
     transition: opacity .1s ease-in-out;
     border-radius: 10px;
 }
@@ -223,6 +222,7 @@ body{
     display: inline-block;
     margin-top: 80px;
     margin-bottom: 62px;
+    font-size: 13rem;
 }
 
 #About-heading>h2 {
@@ -235,11 +235,14 @@ body{
 }
 
 .article {
-    position: absolute;
     width: 80%;
     /* display: inline-block; */
     padding: 29px 0px;
-    margin-left: 60px;
+    margin-left: 45px;
+}
+
+.about-us-section-content-container {
+    display: flex;
 }
 
 .container .title {
@@ -255,12 +258,8 @@ body{
 
 .content {
     float: left;
-    width: 50%;
-    padding: 40px;
-    /* padding-left: 70px; */
-    padding-right: 70px;
-    height: 475px;
-    margin-bottom: 70px;
+    width: 60%;
+    padding-left: 70px;
     position: relative;
 }
 
@@ -270,7 +269,8 @@ body{
 
 .img-section {
     float: right;
-    width: 48%;
+    width: 40%;
+    margin: -5rem;
 }
 
 .img-section img {
@@ -292,7 +292,7 @@ body{
 
 .second {
     display: flex;
-    width: 629px;
+    width: 100%;
     justify-content: flex-start;
 }
 
@@ -370,7 +370,8 @@ lord-icon {
 }
 
 .cards {
-    margin-left: 80px;
+    margin-left: 18rem;
+    margin-right: 16rem;
     position: static;
     padding-top: 40px;
     display: grid;
@@ -439,8 +440,8 @@ lord-icon {
     background-size: cover;
 }
 
-.glimpses-bg {
-    padding: 50px 0 20px 0;
+.glimpses-section {
+    padding: 60px 0;
     background: rgba(31, 38, 49, 0.85);
 }
 
@@ -881,8 +882,8 @@ lord-icon {
 
 .footer-logo {
     height: 160px;
-    padding-left: 50px;
-    margin-right: 80px;
+    /* padding-left: 50px; */
+    /* margin-right: 80px; */
 }
 
 .footer_bottom {
@@ -1126,7 +1127,7 @@ h6 {
     column-gap: 2vw;
 }
 
-.contact-container a {
+.contact-link-style {
     color: white;
     font-family: 'Segoe UI';
     font-style: normal;
@@ -1139,7 +1140,7 @@ h6 {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .contact-link-style:hover {
@@ -1205,12 +1206,57 @@ height: auto;
     width: 25vw;
     height: auto;
 }
+
+.swiper {
+    margin-top: 40px;
+    height: 550px;
+    width: 100%;
+}
+
+.swiper .swiper-pagination-bullet {
+    width: 15px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 5px;
+    background: #fff;
+    opacity: 1;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: #B492FF;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    color: #fff;
+}
+
+.swiper .swiper-slide.swiper-slide-active,
+.swiper .swiper-slide.swiper-slide-active img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.swiper .swiper-slide:not(.swiper-slide-active) {
+    opacity: 0.4;
+    transition: .4s ease all;
+    transform: scale(.8);
+}
+
+.swiper .swiper-scrollbar {
+    display: none;
+}
+
 /* ********** Media ************* */
 
 @media screen and (max-width:1441px) {
-    .content .article p {
-        font-size: 18px;
-    }
     .home_main-text {
         display: flex;
         justify-content: center;
@@ -1242,11 +1288,11 @@ height: auto;
         font-size: 19vw;
         line-height: 346px;
         padding-left: 2rem;
-        background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
+        /* background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-emphasis-color: transparent;
+        text-emphasis-color: transparent; */
     }
     .home_date-container p {
         font-family: 'Roboto';
@@ -1265,82 +1311,11 @@ height: auto;
         width: 40%;
         margin-bottom: 10%;
     }
-    /************************ about us  ****************************/
-    .section {
-        width: 100%;
-        /* height: 130vh; */
-        display: inline-block;
-        margin-top: 80px;
-        margin-bottom: 62px;
-    }
-    #About-heading>h2 {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 4vw;
-        /* line-height: 76px; */
-        color: #131314;
-    }
-    .article {
-        position: absolute;
-        width: 80%;
-        /* display: inline-block; */
-        padding: 29px 0px;
-        margin-left: 60px;
-    }
-    .container .title {
-        width: 100%;
-        /* text-align: center; */
-        margin-bottom: 50px;
-    }
-    .container .title h1 {
-        font-size: 35px;
-        color: #23231e;
-    }
-    .content {
-        float: left;
-        width: 50%;
-        padding: 40px;
-        /* padding-left: 70px; */
-        padding-right: 70px;
-        height: 475px;
-        margin-bottom: 70px;
-        position: relative;
-    }
-    .para1 .para2 .para3 {
-        margin-bottom: 10%;
-    }
-    .img-section {
-        float: right;
-        width: 48%;
-    }
-    .img-section img {
-        width: 100%;
-        /* height: auto; */
-        height: 110vh;
-    }
-    .content .article p {
-        font-size: 22px;
-        line-height: 1.5;
-        margin-bottom: 21px;
-        text-align: justify;
-    }
-    
-    .second {
-        display: flex;
-        width: 629px;
-        justify-content: flex-start;
-    }
-
     /*********************STATS*******************/
-    .about-us-icons {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-    }
     .stat {
         display: flex;
         flex-direction: column;
+        height: 17rem;
     }
     .stat-image {
         text-align: center;
@@ -1360,47 +1335,7 @@ height: auto;
     .stats-text span {
         color: #3282b8;
     }
-    /************************ cards ****************************/
-    .card-heading {
-        /* position: absolute; */
-        margin: 10px 0px 10px;
-        padding-top: 15vh;
-    }
-    .cards {
-        margin-left: 80px;
-        position: static;
-        padding-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        /* grid-gap: 30px; */
-    }
-    
-    .card:hover {
-        box-shadow: 2px 2px 20px black;
-    }
-    .card-img {
-        text-align: center;
-    }
-    .card-img img {
-        object-fit: cover;
-        border-radius: 50%;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        width: 230px;
-        height: 230px;
-    }
-    .card-info {
-        text-align: center;
-        padding: 4px;
-        font-size: large;
-    }
-    .card-info img {
-        width: 30%;
-    }
-    .card_title {
-        margin: 10px;
-    }
+
     /* ***************** GLIMPSES ****************** */
     .side-decorator {
         display: flex;
@@ -1808,11 +1743,7 @@ height: auto;
     .footer-container {
         background-color: #1F2631;
     }
-    .footer-logo {
-        height: 160px;
-        padding-left: 50px;
-        margin-right: 80px;
-    }
+
     .footer_bottom {
         font-size: 14px;
         font-weight: 300;
@@ -1853,8 +1784,10 @@ height: auto;
         outline: none;
     }
     .new_footer_top .f_widget.about-widget .f_list li a:hover {
-        color: #9a60e0;
-        /* background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%); */
+        background: linear-gradient(to left, #d030e6, #aa6df8, #8c5cf3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
     .new_footer_top .f_widget.about-widget .f_list li {
         margin-bottom: 11px;
@@ -1998,6 +1931,7 @@ height: auto;
 
 
     /*************footer End*****************/
+    
     /** ***************** Contact Us ****************** */
     .contactus-section {
         background-color: #1f2631;
@@ -2077,12 +2011,6 @@ height: auto;
         width: 25vw;
         height: auto;
     }
-    /* #contact-bottom-mid-img {
-position: absolute;
-bottom: 0;
-width: 25vw;
-height: auto;
-} */
     #contact-top-left-img {
         position: absolute;
         top: 0;
@@ -2091,56 +2019,52 @@ height: auto;
         width: 25vw;
         height: auto;
     }
-    /* ********** Media ************* */
+}
+
+
+ /* ************************* Media Query  ************************************** */
+
+   @media screen and (min-width:1500px)
+    {
+    .img-section
+        {
+          float: right;
+          width: 73rem;
+       }
+   }
+
     @media screen and (max-width:1441px) {
-        .content .article p {
+        /* .content .article p {
             font-size: 18px;
-        }
+        } */
         .img-section img {
             height: 80vh;
         }
     }
+
+
     @media screen and (max-width:1341px) {
         .content .article p {
-            font-size: 16px;
-            padding-right: 10px;
-            margin-right: 10px;
+            font-size: 19px;
         }
-        .cards {
-            position: static;
-            padding-top: 40px;
-            grid-gap: 0px;
-        }
-        .prize-cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-        .date {
-            margin-left: 20%;
+        .card-img img {
+            width: 187px;
+            height: 187px;
         }
         .content .article .second p {
             width: 90%;
             margin-bottom: 5%;
         }
     }
-    @media screen and (max-width:1041px) {
-        .date {
-            margin-left: 30%;
-            width: 50%;
-        }
-        .content .article .second p {
-            width: 97%;
-            margin-bottom: 0;
-        }
-    }
+
     @media screen and (max-width:1227px) {
         .home_hackCBS>h1 {
             font-size: 150px;
         }
-        .article {
+        /* .article {
             width: 105%;
             margin-right: 15px;
-        }
+        } */
         .img-section {
             width: 42%;
         }
@@ -2148,17 +2072,9 @@ height: auto;
             height: 66vh;
         }
         .cards {
-            margin-left: 50px;
-            position: static;
-            padding-top: 40px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: center;
-            grid-gap: 10px;
-        }
-        .card_title {
-            margin: 10px;
-            FONT-SIZE: 25px;
+            margin-left: 15rem;
+            margin-right: 10rem;
+            
         }
         .prize-heading {
             width: 260px;
@@ -2173,39 +2089,222 @@ height: auto;
             height: 32px;
         }
     }
+
+    @media screen and (max-width:1145px){
+        .content .article p {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width:1041px) {
+        .swiper {
+            height: 450px;
+        }
+
+        .content .article .second p {
+            width: 97%;
+            margin-bottom: 0;
+        }
+        .card-img img {
+            width: 148px;
+            height: 139px;
+        }
+        .cards {
+            margin-left: 8rem !important;
+            margin-right: 4rem !important;
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+
+        .card_title{
+            font-size: 1.7rem;
+        }
+    }
+    
+
+    @media screen and (max-width:1039px){
+        .about-us-section-content-container {
+            flex-direction: column;
+        }
+        .content {
+            width: 100%;
+            margin-bottom:1rem ;
+            height: 44vh;
+        }
+        .img-section {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 10rem;
+        }
+        .about-us-icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+        }
+    
+        .article {
+            padding: 8px 0px;
+        }
+        .second{
+            justify-content: space-between;
+        }
+    }
+    
+    
     @media screen and (max-width:924px) {
         .prize-cards {
             display: grid;
-            grid-template-columns: 1fr
+            grid-template-columns: repeat(2, 1fr);
         }
     }
-    @media screen and (max-width:876px) {
-        /* .cards {
-margin: 15px;
-} */
-        .card_title {
-            font-size: 21px;
+
+    @media screen and (max-width: 900px) {
+        .img-section img {
+            height: 46vh;
+            width: 31.3vh;
         }
+        .f_list a{
+            font-size: 1.5em;
+        }
+
+        .f_size_18{
+            margin-top: 20%;
+        }
+
+        .swiper {
+            margin-top: unset;
+            height: 400px;
+        }
+    }
+
+
+    
+    @media screen and (max-width:876px) {
         .card-section {
             margin-top: 40px;
         }
+        .card-img img {
+            width: 126px;
+            height: 116px;
+        }
     }
+  
+
+    @media screen and (max-width:888px) {
+        .content {
+            width: 100%;
+            padding-left: 45px;
+        }
+        .article{
+            margin-left: 25px;
+        }
+        .article {
+            position: absolute;
+            width: 82%;
+        }
+        .date {
+            margin-left: 0%;
+        }
+        .venue{
+            margin-bottom: 5rem;
+        }
+        .content .article .second p {
+            /* width: 204%; */
+            white-space: nowrap;
+            margin-bottom: 0%;
+        }
+    }
+
+    @media screen and (max-width:734px) {
+        .venue {
+            margin-left: 0;
+        }
+        .img-section{
+            margin-top: 7rem !important;
+        }
+    }
+
+    
     @media screen and (max-width:768px) {
         #workshop-card-text>h6 {
             margin-bottom: 0;
         }
-    }
-    @media screen and (max-width:888px) {
-        .content {
-            width: 80%;
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
-        .img-section {
+    }
+
+
+    @media screen and (max-width: 767px) {
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0px 50px;
+            margin: 0px;
+            flex-direction: column;
+            padding-left: 10px;
+        }
+        .social {
+            text-align: center;
+        }
+        .social_1 {
+            text-align: -webkit-center;
+        }
+        .footer-logo {
+            padding-left: 0px;
+        }
+        .prize-cards {
+            width: 88%;
+            margin-left: 8%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        #mlh-logo {
+            margin-left: 4rem;
+        }
+    }
+
+
+    @media screen and (max-width: 680px){
+        .card-img img {
+            width: 111px;
+            height: 108px;
+        }
+    }
+
+    
+    @media screen and (max-width:624px) {
+     .img-section {
+        margin-top: 13rem !important;
+      } 
+    }
+
+    @media screen and (max-width:600px) {
+        .workshop-card {
+            padding-top: 15px;
+            width: 37vw;
+            height: 50vw;
+        }
+        #workshop-card-img img {
+            width: 34vw;
+        }
+        .workshop-card-container {
+            grid-template-columns: auto auto;
+        }
+        .swiper {
+            height: 300px !important;
+        }
+        .swiper .swiper-button-next,
+        .swiper .swiper-button-prev {
             display: none;
         }
-        .card-img img {
-            width: 155px;
-        }
     }
+
+    
     @media screen and (max-width:640px) {
         .card_title {
             font-size: 19px;
@@ -2221,32 +2320,66 @@ margin: 15px;
             padding-top: 5px;
         }
         .article {
-            padding: 0px 0px;
+            padding: 12px 10px !important;
         }
         .content .article p {
             font-size: 16px;
-            padding-right: 10px;
-            margin-right: 66px;
+            /* padding-right: 10px; */
+            /* margin-right: 66px; */
+        }
+
+        .prize-cards {
+            display: grid;
+            grid-template-columns: 1fr !important;
+            margin-left: 5rem !important;
         }
     }
-    @media screen and (max-width:600px) {
-        .workshop-card {
-            padding-top: 15px;
-            width: 37vw;
-            height: 50vw;
+    
+    @media screen and (max-width: 545px) {
+        .article {
+            /* width: 128%; */
+            margin-left: 6px;
         }
-        #workshop-card-img img {
-            width: 34vw;
+        .f_list a{
+            font-size: 1.5em;
         }
-        .workshop-card-container {
-            grid-template-columns: auto auto;
+
+        .f_size_18{
+            margin-top: 20%;
+        }
+
+        .about-us-icons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) !important;
+            grid-template-rows: repeat(3, auto);
+        }
+        .swiper {
+            height: 250px !important;
+        }
+        
+    }
+
+    
+    @media screen and (max-width:485px){
+      .content .article p {
+        font-size: 14px;
+       }
+    }
+
+    @media screen and (max-width: 476px) {
+        .second h2,
+        p {
+            font-size: 1.5rem;
+        }
+        .cards {
+            margin-left: 3rem !important;
+            margin-right: 1rem !important;
+        }
+        .card_title {
+            font-size: 1.5rem !important;
         }
     }
-    @media screen and (max-width:375px) {
-        .workshop-card {
-            height: 60vw;
-        }
-    }
+
     @media screen and (max-width: 425px) {
         .row {
             display: flex;
@@ -2272,11 +2405,6 @@ margin: 15px;
             width: 33px;
             height: 38px;
         }
-        .prize-cards {
-            width: 50%;
-            margin-left: 25%;
-            margin-bottom: -10%;
-        }
         .prize-img img {
             border: 18px solid rgb(249, 139, 225);
             object-fit: fill;
@@ -2287,32 +2415,12 @@ margin: 15px;
             height: 141px;
         }
     }
-    @media screen and (max-width: 767px) {
-        .row {
-            display: flex;
-            justify-content: space-between;
-            padding: 50px 0px 50px;
-            margin: 0px;
-            flex-direction: column;
-            padding-left: 10px;
-        }
-        .social {
-            text-align: center;
-        }
-        .social_1 {
-            text-align: -webkit-center;
-        }
-        .footer-logo {
-            padding-left: 0px;
-        }
-        .prize-cards {
-            width: 88%;
-            margin-left: 18%;
-        }
-    }
+
     .social_icon {
         display: table-row-group;
     }
+
+
     @media screen and (max-width: 425px) {
         .container-themes .themes-card .theme-box {
             width: 15rem;
@@ -2320,9 +2428,6 @@ margin: 15px;
         }
         .container-themes .themes-card .theme-box .theme-content {
             width: 15rem;
-        }
-        .content {
-            font-size: 4rem;
         }
         .second {
             width: 200px;
@@ -2340,88 +2445,16 @@ margin: 15px;
             margin-top: 20%;
         }
     }
-    @media screen and (max-width: 545px) {
-        .article {
-            width: 128%;
-            margin-left: 6px;
-        }
-        .f_list a{
-            font-size: 1.5em;
-        }
 
-        .f_size_18{
-            margin-top: 20%;
-        }
+@media screen and (max-width:380px){
+    #About-heading>h2 {
+        font-size: 31px;
     }
-    @media screen and (max-width: 900px) {
-        .img-section img {
-            height: 46vh;
-            width: 31.3vh;
-        }
-        .section {
-            font-size: 1rem;
-        }
-        .f_list a{
-            font-size: 1.5em;
-        }
+}
 
-        .f_size_18{
-            margin-top: 20%;
-        }
-    }
-    @media screen and (min-width: 900px) {
-        .section {
-            font-size: 1rem;
-        }
-    }
-    @media screen and (min-width:1500px) {
-        .img-section {
-            float: right;
-            width: 73rem;
-        }
-    }
-    @media screen and (max-width:890px) {
-        .date {
-            max-width: fit-content;
-        }
-    }
-    @media screen and (max-width:734px) {
-        .second {
-            justify-content: inherit;
-        }
-        .date {
-            margin-right: -45rem;
-        }
-        .venue {
-            margin-left: 0;
-        }
-    }
-    @media screen and (max-width: 888px) {
-        .content .article .second p {
-            /* width: 204%; */
-            white-space: nowrap;
-            margin-bottom: 0%;
-        }
-    }
-    @media screen and (max-width: 660px) {
-        .second {
-            justify-content: inherit;
-            width: 400px;
-        }
-    }
-    @media screen and (max-width: 476px) {
-        .second {
-            justify-content: inherit;
-            width: 180px;
-        }
-        .second h2,
-        p {
-            font-size: 3rem;
-        }
-    }
-    @media screen and (max-width: 768px) {
-        #mlh-logo {
-            margin-left: 4rem;
-        }
+
+@media screen and (max-width:375px) {
+    .workshop-card {
+        height: 60vw;
     }
 }
