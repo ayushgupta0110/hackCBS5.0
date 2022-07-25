@@ -857,7 +857,7 @@ lord-icon {
 .row {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0px 50px;
+    padding: 20px 0px 20px;
     margin: 0px;
 }
 
@@ -1097,7 +1097,7 @@ h6 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    font-size: 4.5vw;
+    font-size: 4vw;
     color: #1F2631;
 }
 
@@ -1722,12 +1722,6 @@ height: auto;
         /* Unicode character for "minus" sign (-) */
     }
     /*************footer start *****************/
-    .row {
-        display: flex;
-        justify-content: space-between;
-        padding: 50px 0px 50px;
-        margin: 0px;
-    }
     .new_footer_area {
         background: #fbfbfd;
     }
@@ -1946,13 +1940,6 @@ height: auto;
         padding-left: 4vw;
         z-index: 2;
         position: relative;
-    }
-    #contact-heading>span {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 4.5vw;
-        color: #1F2631;
     }
     .fa-globe,
     .fa-envelope,
