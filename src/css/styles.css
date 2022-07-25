@@ -1606,7 +1606,7 @@ height: auto;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 5vw;
         column-gap: 10vh;
-        padding: 15vh 8vw;
+        padding: 15vh 10vw;
     }
     .sponsor-container {
         text-align: center;
@@ -1639,8 +1639,8 @@ height: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         row-gap: 3vw;
-        column-gap: 4vh;
-        padding: 10vh 6vw;
+        column-gap: 5vh;
+        padding: 10vh 10vw;
     }
     .general-sponsors {
         text-align: center;
@@ -1650,7 +1650,7 @@ height: auto;
         grid-template-columns: repeat(3, 1fr);
         row-gap: 2vw;
         column-gap: 8vh;
-        padding: 10vh 11vw;
+        padding: 10vh 13vw;
     }
     /** ***************** FAQs ****************** */
     .faqs-section {
