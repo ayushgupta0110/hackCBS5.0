@@ -570,7 +570,7 @@ lord-icon {
     font-style: normal;
     font-weight: 400;
     font-size: 1vw;
-    line-height: 4vh;
+    /* line-height: 4vh; */
     color: #5F5B65;
 }
 
@@ -606,6 +606,10 @@ lord-icon {
 #workshop-card-button:hover {
     background-color: #ee3192;
     text-decoration: none;
+}
+
+.fa-calendar, .fa-clock{
+    font-size: 0.8vw !important;
 }
 /****************************Themes*************** */
 
@@ -1457,30 +1461,30 @@ height: auto;
         padding-top: 15vh;
     }
     .workshop-card-container {
-        padding: 12vh 5vw;
+        padding: 12vh 12vw;
         display: grid;
         grid-template-columns: auto auto auto;
-        row-gap: 4%;
-        column-gap: 2%;
+        row-gap: 3%;
+        /* column-gap   : 2%; */
     }
     .workshop-card {
-        width: 27vw;
-        height: 40vw;
-        border-radius: 20px;
+        width: 23vw;
+        height: 32vw;
+        border-radius: 1.2vw;
         box-shadow: 0px 4px 25px 3px rgba(0, 0, 0, 0.25);
         background: linear-gradient(159.8deg, #F8F5FF 0%, #d6c6f8 88.57%);
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
         align-items: center;
-        padding: 20px;
+        padding: 1vw    ;
     }
     #workshop-card-title>h3 {
         font-family: 'Roboto';
         font-style: normal;
-        font-weight: 550;
-        font-size: 1.2vw;
-        line-height: 2vw;
+        font-weight: 500;
+        font-size: 1vw;
+        line-height: 1  vw;
         margin-bottom: 0;
         color: #1F2631;
     }
@@ -1488,14 +1492,15 @@ height: auto;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 0.9vw;
+        font-size: 0.8vw;
         line-height: 2vw;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         color: #5F5B65;
     }
     
     #workshop-timing {
         display: flex;
+        gap: 5px;
         flex-direction: column;
         margin-left: -59%;
     }
@@ -1504,15 +1509,15 @@ height: auto;
         font-style: normal;
         font-weight: 400;
         font-size: 1vw;
-        line-height: 4vh;
+        /* line-height: 4vh; */
         color: #5F5B65;
     }
     .workshop-card>a {
         margin-top: auto
     }
     #workshop-card-img img {
-        height: 15vw;
-        width: 25vw;
+        height: 11vw;
+        width: 21vw;
     }
     #workshop-card-button {
         background: #f74ca4;
@@ -1540,6 +1545,7 @@ height: auto;
     .container-themes {
         margin-top: 2vw;
     }
+
     /****************************prizes*************** */
     .prize-cards {
         margin-left: 76px;
@@ -1959,13 +1965,20 @@ height: auto;
         z-index: 2;
         position: relative;
     }
-    .fa-globe,
-    .fa-envelope,
-    .fa-phone {
+
+    .fa-globe{
         padding: 16% 0;
-        color: #E5A2DD;
         font-size: 2vw !important;
+        color: #E5A2DD;
     }
+    
+    .fa-envelope, .fa-phone {
+        font-size: 1.7vw !important;
+        padding-top: 20%;
+        padding-bottom: 16%;
+        color: #E5A2DD;
+    }
+
     .contact-container {
         margin-top: 8vh;
         margin-left: 3vw;
@@ -1977,11 +1990,13 @@ height: auto;
         z-index: 2;
         /* To prevent image overlapping on text */
     }
+
     .contact-container>* {
         display: flex;
         flex-direction: row;
         column-gap: 2vw;
     }
+
     .contact-container a {
         color: white !important;
         font-family: 'Segoe UI';
@@ -1990,6 +2005,7 @@ height: auto;
         font-size: 2vw;
         line-height: 43px;
     }
+
     .contact-icon-circle {
         width: 3.3vw;
         height: 3.3vw;
@@ -2000,14 +2016,16 @@ height: auto;
         background-color: transparent;
         text-align: center;
     }
+
     #contact-man-img {
         position: absolute;
         top: 12vh;
         right: 1vw;
         z-index: 3;
-        width: 26vw;
+        width: 23vw;
         height: auto;
     }
+
     #contact-top-right-img {
         position: absolute;
         top: 0;
@@ -2016,6 +2034,7 @@ height: auto;
         width: 25vw;
         height: auto;
     }
+
     #contact-top-left-img {
         position: absolute;
         top: 0;
