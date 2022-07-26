@@ -110,13 +110,10 @@
     background-color: transparent;
     margin-top: 25%;
     width: 100%;
-    /* transition: width 2s, height 2s; */
     transition: all 0.5s cubic-bezier(0.49, 0, 0.27, 0.97)
 }
 
 .container-themes .themes-card:hover .theme-box .theme-content h4 {
-    /* color: rgb(48, 48, 48); */
-    /* background-color: transparent; */
     visibility: hidden;
 }
 
