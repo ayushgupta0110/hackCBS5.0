@@ -570,7 +570,7 @@ lord-icon {
     font-style: normal;
     font-weight: 400;
     font-size: 1vw;
-    line-height: 4vh;
+    /* line-height: 4vh; */
     color: #5F5B65;
 }
 
@@ -606,6 +606,10 @@ lord-icon {
 #workshop-card-button:hover {
     background-color: #ee3192;
     text-decoration: none;
+}
+
+.fa-calendar, .fa-clock{
+    font-size: 0.8vw !important;
 }
 /****************************Themes*************** */
 
@@ -1482,6 +1486,7 @@ height: auto;
     
     #workshop-timing {
         display: flex;
+        gap: 5px;
         flex-direction: column;
         margin-left: -59%;
     }
@@ -1490,7 +1495,7 @@ height: auto;
         font-style: normal;
         font-weight: 400;
         font-size: 1vw;
-        line-height: 4vh;
+        /* line-height: 4vh; */
         color: #5F5B65;
     }
     .workshop-card>a {
@@ -1526,6 +1531,7 @@ height: auto;
     .container-themes {
         margin-top: 2vw;
     }
+
     /****************************prizes*************** */
     .prize-cards {
         margin-left: 76px;
