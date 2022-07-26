@@ -94,26 +94,30 @@
 }
 
 .container-themes .themes-card .theme-box .theme-content h4 {
-    visibility: hidden;
+    /* visibility: hidden;   */
     font-size: 2.5rem;
+    color: rgb(48, 48, 48); 
 }
 
 .container-themes .themes-card .theme-box .theme-content img {
-    width: 100%;
-    margin-top:15%;
+    width: 80%;
+    margin-bottom:10%;
     background-color: transparent;
 }
 
 .container-themes .themes-card:hover .theme-box .theme-content img {
     padding: 5px;
     background-color: transparent;
-    width: 90%;
+    margin-top: 25%;
+    width: 100%;
+    /* transition: width 2s, height 2s; */
+    transition: all 0.5s cubic-bezier(0.49, 0, 0.27, 0.97)
 }
 
 .container-themes .themes-card:hover .theme-box .theme-content h4 {
-    color: rgb(48, 48, 48);
-    visibility: visible;
-    background-color: transparent;
+    /* color: rgb(48, 48, 48); */
+    /* background-color: transparent; */
+    visibility: hidden;
 }
 
 .container-themes .themes-card .theme-box .theme-content {
