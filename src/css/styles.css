@@ -858,11 +858,29 @@ lord-icon {
 }
 /*************footer start *****************/
 
-.row {
+.footer-row {
     display: flex;
     justify-content: space-between;
     padding: 20px 0px 20px;
-    margin: 0px;
+    margin-left: 2%;
+    flex-wrap: wrap;
+}
+
+.footer-item{
+    margin-top: 2%;
+    width: 20%;
+}
+
+.footer-icon{
+    margin-right: 4%;
+}
+
+.footer-resources{
+    margin-left: -3%;
+}
+
+.footer-social{
+    margin-left: -2%;
 }
 
 .new_footer_area {
@@ -900,10 +918,6 @@ lord-icon {
 
 .f_list a{
     font-size: 1.5em;
-}
-
-.archives{
-    margin-left: 5%;
 }
 
 .new_footer_top .company_widget p {
@@ -2161,30 +2175,12 @@ height: auto;
         }
 
         .f_size_18{
-            margin-top: 20%;
+            margin-top: 10%;
         }
 
         .swiper {
             margin-top: unset;
             height: 400px;
-        }
-    }
-
-
-    
-    @media screen and (max-width:876px) {
-        .card-section {
-            margin-top: 40px;
-        }
-        .card-img img {
-            width: 126px;
-            height: 116px;
-        }
-        .schedule{
-            display: block;
-        }
-        .schedule-laptop{
-            display: none;
         }
     }
   
@@ -2212,18 +2208,33 @@ height: auto;
             white-space: nowrap;
             margin-bottom: 0%;
         }
+
+        .footer-item{
+            margin-top: -2%;
+        }
+        .footer-social{
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
-    @media screen and (max-width:734px) {
-        .venue {
-            margin-left: 0;
+    @media screen and (max-width:876px) {
+        .card-section {
+            margin-top: 40px;
         }
-        .img-section{
-            margin-top: 7rem !important;
+        .card-img img {
+            width: 126px;
+            height: 116px;
+        }
+        .schedule{
+            display: block;
+        }
+        .schedule-laptop{
+            display: none;
         }
     }
 
-    
+
     @media screen and (max-width:768px) {
         #workshop-card-text>h6 {
             margin-bottom: 0;
@@ -2232,10 +2243,26 @@ height: auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
-    }
-
-
-    @media screen and (max-width: 767px) {
+        #mlh-logo {
+            margin-left: 4rem;
+        }
+        .footer-row{
+            flex-direction: column;
+        }
+        .footer-icon{
+            margin: 0 auto 5% auto;
+        }
+        .footer-item{
+            width: 100%;
+            text-align: center;
+            margin-top: -5%;
+        }
+        .footer-resources{
+            margin-left: 0;
+        }
+        .footer-social{
+            margin: 3% auto 3% auto;
+        }
         .row {
             display: flex;
             justify-content: space-between;
@@ -2250,21 +2277,20 @@ height: auto;
         .social_1 {
             text-align: -webkit-center;
         }
-        .footer-logo {
-            padding-left: 0px;
-        }
         .prize-cards {
             width: 88%;
             margin-left: 8%;
         }
     }
 
-    @media screen and (max-width: 768px) {
-        #mlh-logo {
-            margin-left: 4rem;
+    @media screen and (max-width:734px) {
+        .venue {
+            margin-left: 0;
+        }
+        .img-section{
+            margin-top: 7rem !important;
         }
     }
-
 
     @media screen and (max-width: 680px){
         .card-img img {
