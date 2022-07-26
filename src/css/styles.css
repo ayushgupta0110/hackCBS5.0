@@ -702,8 +702,12 @@ lord-icon {
 
 /****************SCHEDULE*********************/
 
-.schedule{
+.schedule, .schedule-laptop{
     width: 100%;
+}
+
+.schedule{
+    display: none;
 }
 
 /** ***************** OUR SPONSORS *****************  */
@@ -2188,6 +2192,12 @@ height: auto;
         .card-img img {
             width: 126px;
             height: 116px;
+        }
+        .schedule{
+            display: block;
+        }
+        .schedule-laptop{
+            display: none;
         }
     }
   
