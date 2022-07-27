@@ -4,6 +4,7 @@
 
 .themes {
     font-family: "Poppins", sans-serif;
+    padding-bottom: 10%;
 }
 
 .container-themes {
@@ -124,7 +125,7 @@
 
 @media screen and (max-width: 520px){
     .themes{
-        margin-bottom: 15%;
+        padding-bottom: 35%;
     }
     .container-themes {
         display: grid;
