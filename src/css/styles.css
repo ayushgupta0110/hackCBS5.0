@@ -2148,6 +2148,9 @@ height: auto;
     
 
     @media screen and (max-width:1039px){
+        .home_hackCBS>h1 {
+            line-height: 190px;
+        }
         .about-us-section-content-container {
             flex-direction: column;
         }
@@ -2255,6 +2258,10 @@ height: auto;
 
 
     @media screen and (max-width:768px) {
+        .home_hackCBS>h1 {
+            font-size: 115px;
+            line-height: 160px;
+        }
         #workshop-card-text>h6 {
             margin-bottom: 0;
         }
@@ -2423,6 +2430,11 @@ height: auto;
     }
 
     @media screen and (max-width: 425px) {
+        .home_hackCBS>h1 {
+            font-size: 60px;
+            line-height: 100px;
+        }
+
         .row {
             display: flex;
             justify-content: space-between;
