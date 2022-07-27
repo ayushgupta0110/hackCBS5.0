@@ -627,6 +627,7 @@ lord-icon {
 
 .prize {
     width: 85%;
+    text-align: center;
     height: 91%;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -639,11 +640,11 @@ lord-icon {
 }
 
 .prize-img img {
-    border: 18px solid rgb(249, 139, 225);
+    border: 18px solid rgb(241, 46, 199);
     object-fit: fill;
     border-radius: 50%;
     margin-top: -50px;
-    margin-left: 35px;
+    /* margin-left: 35px; */
     width: 170px;
     height: 170px;
 }
@@ -672,7 +673,35 @@ lord-icon {
     color: white;
     border-radius: 12px;
     font-size: 20px;
+    /* transition: 0.8s; */
 }
+
+.prize-info button:hover{
+    /* transform: scale(1.2); */
+    /* background: rgb(206, 110, 207); */
+}
+.card2:hover,
+.card1:hover,
+.card3:hover
+{
+    animation: float 1s ease-in-out infinite;
+    /* background: #000; */
+    }
+
+    @keyframes float {
+        0% {
+            /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+            transform: translatey(0px);
+        }
+        50% {
+            /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+            transform: translatey(-20px);
+        }
+        100% {
+            /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+            transform: translatey(0px);
+        }
+    }
 
 .prize-heading {
     display: flex;
@@ -700,6 +729,60 @@ lord-icon {
     height: 100px;
 }
 
+.prize-img img:hover{
+    transform: rotate(360deg);
+    transition: transform 0.8s;
+}
+
+.speaker-links {
+    position: absolute;
+    bottom: -105px !important;
+    width: 87%;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    backdrop-filter: blur(15px);
+    visibility: hidden;
+    flex-direction: column;
+    /* box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1); */
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+    transition: 0.3s ease-in-out ;
+  }
+
+
+
+  .speaker-links .spklinks {
+    position: relative;
+    display: flex;
+    padding: 0;
+  }
+
+ .spklinks li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    /* transition: 0.5s; */
+    opacity: 0;
+    /* transition-delay: calc(0.2s*var(--i)); */
+  }
+
+ .spklinks li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+ .spklinks li a {
+    color: #000;
+    font-size: 24px;
+  }
+
+  .card:hover .speaker-links {
+    bottom: 0px !important;
+    z-index: 1;
+    visibility: visible;
+}
 /****************SCHEDULE*********************/
 
 .schedule{
@@ -1549,7 +1632,7 @@ height: auto;
         object-fit: fill;
         border-radius: 50%;
         margin-top: -50px;
-        margin-left: 35px;
+        /* margin-left: 35px; */
         width: 170px;
         height: 170px;
     }
@@ -1575,6 +1658,7 @@ height: auto;
         border-radius: 12px;
         font-size: 20px;
     }
+
     .prize-heading {
         display: flex;
         font-size: 5vh;
@@ -1776,6 +1860,7 @@ height: auto;
     button:focus {
         text-decoration: none;
         outline: none;
+        /* background: #000; */
     }
     .new_footer_top .f_widget.about-widget .f_list li a:hover {
         background: linear-gradient(to left, #d030e6, #aa6df8, #8c5cf3);
@@ -2124,6 +2209,7 @@ height: auto;
             margin: 0px;
             padding: 0px;
             margin-bottom: 10rem;
+            margin-top: 15rem;
         }
         .about-us-icons {
             display: grid;
@@ -2209,7 +2295,7 @@ height: auto;
             margin-left: 0;
         }
         .img-section{
-            margin-top: 7rem !important;
+            margin-top: 18rem !important;
         }
     }
 
@@ -2266,7 +2352,7 @@ height: auto;
     
     @media screen and (max-width:624px) {
      .img-section {
-        margin-top: 13rem !important;
+        margin-top: 29rem !important;
       } 
     }
 
@@ -2346,11 +2432,21 @@ height: auto;
         
     }
 
+    @media screen and (max-width : 519px) {
+        .img-section {
+            margin-top:  39rem !important;
+        }
+    }
+
     
     @media screen and (max-width:485px){
       .content .article p {
         font-size: 14px;
        }
+       .img-section {
+        margin-top: 29rem !important;
+    }
+    
     }
 
     @media screen and (max-width: 476px) {
@@ -2397,7 +2493,7 @@ height: auto;
             object-fit: fill;
             border-radius: 50%;
             margin-top: 16px;
-            margin-left: 35px;
+            /* margin-left: 35px; */
             width: 147px;
             height: 141px;
         }
@@ -2443,5 +2539,11 @@ height: auto;
 @media screen and (max-width:375px) {
     .workshop-card {
         height: 60vw;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .img-section {
+        margin-top: 34rem !important;
     }
 }
