@@ -3,58 +3,27 @@
 }
 
 .themes {
-    margin: 87px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 29vh;
     font-family: "Poppins", sans-serif;
 }
 
 .container-themes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1830px;
-    flex-wrap: wrap;
-}
-
-@media screen and (max-width: 767px){
-    .col1{
-        
-        float:left ;
-        width: 50%;
-        margin-left: -40px;
-    }
-    .col2{
-        
-        float:right ;
-        width: 50%;
-        margin-left: -40px;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 8%;
+    row-gap: 4rem;
+    padding: 0 5%;
 }
 
 .container-themes .themes-card {
     position: relative;
-    width: 430px;
-    height: 280px;
-    margin: 15px;
-}
-
-@media screen and (max-width: 500px){
-    .container-themes .themes-card .theme-box{
-        width: 100px;
-        height: 100px;
-    }
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
 }
 
 .container-themes .themes-card .theme-box {
-    position: absolute;
-    top: 0;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
+    width: 30rem;
+    height: 30rem;
     background: linear-gradient(rgba(240, 233, 255, 1) 22%, rgb(148 128 255) 100%);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
@@ -62,22 +31,6 @@
     justify-content: center;
     align-items: center;
     transition: 0.5s;
-    
-}
-
-@media screen and (max-width: 425px) {
-    .container-themes .themes-card .theme-box {
-        
-        width: 15rem;
-        height: 15rem;
-    }
-    .container-themes .themes-card .theme-box .theme-content {
-       
-        width: 15rem;
-    }
-    .container-themes .themes-card {
-        margin-left: -4.4rem;
-    }
 }
 
 
@@ -90,7 +43,11 @@
     padding: 20px;
     text-align: center;
     background-color: transparent;
-    width: 20rem;
+    width: 25rem;
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
 }
 
 .container-themes .themes-card .theme-box .theme-content h4 {
@@ -117,59 +74,73 @@
     visibility: hidden;
 }
 
-.container-themes .themes-card .theme-box .theme-content {
-    font-size: 1.8em;
-    color: #777;
-    z-index: 1;
-    transition: 0.5s;
+@media screen and (max-width: 1024px){
+    .container-themes{
+        padding: 0;
+    }
 }
-
-@media screen and (max-width:1385px) {
-    .container-themes .themes-card {
-        position: relative;
-        width: 320px;
+@media screen and (max-width: 980px) {
+    .container-themes .themes-card{
+        width: 25rem;
+        height: 25rem;
+    }
+    .container-themes .themes-card .theme-box{
+        width: 25rem;
+        height: 25rem;
     }
 }
 
-@media screen and (max-width:1050px) {
-    .container-themes .themes-card {
-        position: relative;
-        width: 268px;
+@media screen and (max-width: 768px){
+    .col1{
+        float:left ;
+        width: 50%;
+        margin-left: -40px;
+    }
+    .col2{
+        
+        float:right ;
+        width: 50%;
+        margin-left: -40px;
+    }
+    .container-themes .themes-card{
+        width: 20rem;
+        height: 20rem;
+    }
+    .container-themes .themes-card .theme-box{
+        width: 20rem;
+        height: 20rem;
+    }
+    .container-themes .themes-card .theme-box .theme-content {
+        width: 20rem;
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 625px){
+    .container-themes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 520px){
+    .themes{
+        margin-bottom: 15%;
+    }
+    .container-themes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 12rem;
+    }
     .container-themes .themes-card {
         position: relative;
         width: 25rem;
         height: 16.875rem;
     }
-}
-@media screen and (max-width: 767px) {
     .container-themes .themes-card .theme-box {
-        
-        width: 20rem;
-        height: 20rem;
+        width: 25rem;
+        height: 25rem;
     }
     .container-themes .themes-card .theme-box .theme-content {
-       
         width: 20rem;
     }
-  }
-@media screen and (max-width: 601px){
-.container-themes .themes-card {
-    position: relative;
-    width: 230px;
-}}
-@media screen and (max-width: 520px){
-    .container-themes .themes-card {
-        position: relative;
-        width: 200px;
-    }}
- @media screen and (max-width: 425px){
-    .container-themes .themes-card .theme-box {
-        width: 14rem;
-        height: 14rem;
-    }
-  
 }
