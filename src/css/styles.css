@@ -1712,54 +1712,7 @@ height: auto;
         margin: auto;
         margin-left: 11vw;
     }
-    /* Style the buttons that are used to open and close the faq-dropdown body */
-    .faq-dropdown {
-        /* background-color: #eee; */
-        color: #444;
-        cursor: pointer;
-        padding: 20px 20px;
-        width: 70%;
-        border: none;
-        outline: none;
-        transition: 0.4s;
-        margin: auto;
-        margin-left: 11vw;
-        font-size: 18px;
-    }
-    .faq-dropdown-answer {
-        margin: auto;
-        margin-left: 11vw;
-        width: 70%;
-        padding: auto;
-    }
-    .faq-dropdown-answer p {
-        font-size: 16px;
-    }
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-    .active,
-    .faq-dropdown:hover {
-        background-color: #F9F9F9;
-    }
-    /* Style the faq-dropdown panel. Note: hidden by default */
-    .faq-dropdown-answer {
-        padding: 10px 20px 0;
-        background-color: white;
-        display: none;
-        overflow: hidden;
-    }
-    .faq-dropdown:after {
-        content: '\02795';
-        /* Unicode character for "plus" sign (+) */
-        font-size: 13px;
-        color: #777;
-        float: right;
-        margin-left: 5px;
-        padding-top: 4px;
-    }
-    .active:after {
-        content: "\2796";
-        /* Unicode character for "minus" sign (-) */
-    }
     /*************footer start *****************/
     .new_footer_area {
         background: #fbfbfd;
