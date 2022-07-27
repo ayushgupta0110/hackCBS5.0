@@ -11,6 +11,7 @@ body{
     background-color: #F8F5FF;
 }
 
+
 .logo img {
     width: 100px;
     height: 80px;
@@ -676,10 +677,6 @@ lord-icon {
     /* transition: 0.8s; */
 }
 
-.prize-info button:hover{
-    /* transform: scale(1.2); */
-    /* background: rgb(206, 110, 207); */
-}
 .card2:hover,
 .card1:hover,
 .card3:hover
@@ -787,8 +784,11 @@ lord-icon {
 
 .schedule{
     width: 100%;
+    display: none;
 }
-
+.schedule-laptop{
+    width: 100%;
+}
 /** ***************** OUR SPONSORS *****************  */
 
 .sponsor-section {
@@ -1757,7 +1757,54 @@ height: auto;
         margin: auto;
         margin-left: 11vw;
     }
+    /* Style the buttons that are used to open and close the faq-dropdown body */
+    .faq-dropdown {
+        /* background-color: #eee; */
+        color: #444;
+        cursor: pointer;
+        padding: 20px 20px;
+        width: 70%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin: auto;
+        margin-left: 11vw;
+        font-size: 18px;
+    }
+    .faq-dropdown-answer {
+        margin: auto;
+        margin-left: 11vw;
+        width: 70%;
+        padding: auto;
+    }
+    .faq-dropdown-answer p {
+        font-size: 16px;
+    }
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .faq-dropdown:hover {
+        background-color: #F9F9F9;
+    }
+    /* Style the faq-dropdown panel. Note: hidden by default */
+    .faq-dropdown-answer {
+        padding: 10px 20px 0;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+    .faq-dropdown:after {
+        content: '\02795';
+        /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+        padding-top: 4px;
+    }
+    .active:after {
+        content: "\2796";
+        /* Unicode character for "minus" sign (-) */
+    }
     /*************footer start *****************/
     .new_footer_area {
         background: #fbfbfd;
@@ -2139,13 +2186,6 @@ height: auto;
             margin-right: 4rem !important;
         }
     }
-
-    @media screen and (max-width: 1000px){
-
-        .card_title{
-            font-size: 1.7rem;
-        }
-    }
     
 
     @media screen and (max-width:1039px){
@@ -2178,11 +2218,23 @@ height: auto;
         }
     }
     
+    @media screen and (max-width: 1000px){
+
+        .card_title{
+            font-size: 1.7rem;
+        }
+    }
     
     @media screen and (max-width:924px) {
         .prize-cards {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+        }
+        .schedule{
+            display: block;
+        }
+        .schedule-laptop{
+            display: none;
         }
     }
 
