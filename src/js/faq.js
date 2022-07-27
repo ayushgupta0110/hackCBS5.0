@@ -8,12 +8,8 @@ window.addEventListener('load', function() {
             to highlight the button that controls the panel */
             this.classList.toggle("active");
             /* Toggle between hiding and showing the active panel */
-            var body = this.nextElementSibling;
-            if (body.style.display === "block") {
-                body.style.display = "none";
-            } else {
-                body.style.display = "block";
-            }
+            var answer = this.querySelector('.faq-dropdown-answer');
+            answer.classList.toggle('active')
         });
     }
 
