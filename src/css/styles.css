@@ -1231,7 +1231,7 @@ height: auto;
 
 .swiper {
     margin-top: 40px;
-    height: 550px;
+    height: 650px;
     width: 100%;
 }
 
@@ -1253,6 +1253,10 @@ height: auto;
     color: #fff;
 }
 
+.swiper .swiper-slide {
+    transform: scale(1.2);
+}
+
 .swiper .swiper-slide.swiper-slide-active,
 .swiper .swiper-slide.swiper-slide-active img {
     width: 100%;
@@ -1269,7 +1273,7 @@ height: auto;
 .swiper .swiper-slide:not(.swiper-slide-active) {
     opacity: 0.4;
     transition: .4s ease all;
-    transform: scale(.8);
+    transform: scale(.7);
 }
 
 .swiper .swiper-scrollbar {
@@ -2112,11 +2116,19 @@ height: auto;
         .prize-heading p {
             height: 32px;
         }
+        .swiper {
+            height: 580px;
+            margin-top: 0;
+        }
     }
 
     @media screen and (max-width:1145px){
         .content .article p {
             font-size: 16px;
+        }
+        .swiper {
+            height: 520px;
+            margin-top: unset;
         }
     }
 
@@ -2143,6 +2155,10 @@ height: auto;
 
         .card_title{
             font-size: 1.7rem;
+        }
+        .swiper {
+            height: 500px;
+            margin-top: unset;
         }
     }
     
@@ -2338,7 +2354,7 @@ height: auto;
             grid-template-columns: auto auto;
         }
         .swiper {
-            height: 300px !important;
+            height: 380px !important;
         }
         .swiper .swiper-button-next,
         .swiper .swiper-button-prev {
@@ -2396,16 +2412,20 @@ height: auto;
             grid-template-rows: repeat(3, auto);
         }
         .swiper {
-            height: 250px !important;
+            height: 280px !important;
+            margin-top: 40px;
         }
         
     }
 
     
     @media screen and (max-width:485px){
-      .content .article p {
-        font-size: 14px;
-       }
+        .content .article p {
+            font-size: 14px;
+        }
+       .swiper {
+            margin-top: unset;
+        }
     }
 
     @media screen and (max-width: 476px) {
