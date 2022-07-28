@@ -1971,7 +1971,7 @@ height: auto;
 
     #workshop-card-title>h3 {
         font-size: 2vw;
-        padding-top: 4px;
+        padding-top: 6px;
     }
 
     #workshop-card-text>h6 {
@@ -1992,7 +1992,7 @@ height: auto;
     }
 
     #workshop-card-text {
-    margin: 5px auto auto 5px;
+        margin: 5px auto auto 5px;
     }
 
     #workshop-card-button>span{
