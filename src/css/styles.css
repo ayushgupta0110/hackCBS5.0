@@ -529,10 +529,10 @@ lord-icon {
 }
 
 .workshop-card-container {
-    padding: 12vh 12vw;
+    padding: 12vh 8vw;
     display: grid;
     grid-template-columns: auto auto auto;
-    row-gap: 3%;
+    row-gap: 4%;
     /* column-gap   : 2%; */
 }
 
@@ -547,6 +547,7 @@ lord-icon {
     /* justify-content: center; */
     align-items: center;
     padding: 1vw    ;
+    margin: 0 auto;
 }
 
 #workshop-card-title{
