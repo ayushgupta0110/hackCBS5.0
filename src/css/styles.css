@@ -1656,16 +1656,31 @@ height: auto;
 
     @media screen and (max-width:600px) {
         .workshop-card {
-            padding-top: 15px;
-            width: 37vw;
-            height: 50vw;
+            padding-top: 10px;
+            width: 30vw;
+            height: 40vw;
+            border-radius: 1.2vw;
         }
         #workshop-card-img img {
-            width: 34vw;
+            width: 27vw;
+            height: 15vw;
         }
         .workshop-card-container {
             grid-template-columns: auto auto;
+            row-gap: 4%;
         }
+
+        #workshop-card-title>h3 {
+            font-weight: 500;
+            font-size: 1.2vw;
+            line-height: 1vw;
+            margin-bottom: 0;
+        }
+
+        #workshop-card-text>h6 {
+            margin-bottom: 0;
+        }
+
         .swiper {
             height: 300px !important;
         }
