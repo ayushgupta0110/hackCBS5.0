@@ -40,7 +40,7 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header class="banner-parallax">
         <!-- Navbar starts -->
         <nav class="navbar nav navbar-expand-lg "  id="top_navbar">
             <div class="container-fluid">
@@ -212,42 +212,44 @@
     <!-- about us section ends  -->
 
     <!-- Glimpses -->
-    <section id="glimpses" class="glimpses-section">
-        <div id="decorator-headings">
-            <div class="side-decorator" id="purple-decorator">
-                <div id="rect-1"></div>
-                <div id="rect-2"></div>
-                <div id="rect-3"></div>
+    <section id="glimpses" class="parallax">
+        <div class="glimpses-section">
+            <div id="decorator-headings">
+                <div class="side-decorator" id="purple-decorator">
+                    <div id="rect-1"></div>
+                    <div id="rect-2"></div>
+                    <div id="rect-3"></div>
+                </div>
+    
+                <div id="glimpse-heading">
+                    <h2>GLIMPSES</h2>
+                </div>
             </div>
-
-            <div id="glimpse-heading">
-                <h2>GLIMPSES</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="assets/images/hackathon.jpg" alt="hackCBS glimpse 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/glimpse-2.png" alt="hackCBS glimpse 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/glimpse-2.png" alt="hackCBS glimpse 3">
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
-        </div>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img src="assets/images/hackathon.jpg" alt="hackCBS glimpse 2">
-            </div>
-            <div class="swiper-slide">
-                <img src="assets/images/glimpse-2.png" alt="hackCBS glimpse 1">
-            </div>
-            <div class="swiper-slide">
-                <img src="assets/images/glimpse-2.png" alt="hackCBS glimpse 3">
-            </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
     </section>
     <!-- Glimpses ends -->
