@@ -644,6 +644,7 @@ lord-icon {
     border-radius: 20px;
     margin-top: 35px;
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.25);
+    transition: 0.8s ease;
 }
 
 .prize:hover {
@@ -736,7 +737,7 @@ lord-icon {
     height: 100px;
 }
 
-.prize-img img:hover{
+.prize:hover .prize-img img{
     transform: rotate(360deg);
     transition: transform 0.8s;
 }
@@ -744,8 +745,9 @@ lord-icon {
 .speaker-links {
     position: absolute;
     bottom: -105px !important;
-    width: 87%;
-    height: 96px;
+    width: 100%;
+    border-radius: 15px;
+    height: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1539,6 +1541,11 @@ height: auto;
         }
     }
 
+    @media screen and (max-width: 998px){
+        .speaker-links{
+            height: 45px;
+        }
+    }
 
     
     @media screen and (max-width:876px) {
@@ -1741,12 +1748,17 @@ height: auto;
         }
     }
 
+    @media screen and (max-width : 481px){
+        .speaker-links {
+            height: 55px;
+        }
+    }
     @media screen and (max-width: 476px) {
         .content .article p {
             font-size: 14px;
            }
         .img-section {
-            margin-top: 29rem !important;
+            margin-top: 23rem !important;
         }
         .second h2,
         p {
@@ -1838,6 +1850,15 @@ height: auto;
         display: table-row-group;
     }
 
+    @media screen and (max-width:427px){
+          .second{
+            display: block !important;
+          }
+
+          .img-section {
+            margin-top: 36rem !important;
+        }
+    }
 
 @media screen and (max-width:380px){
     #About-heading>h2 {
@@ -1854,6 +1875,6 @@ height: auto;
 
 @media screen and (max-width:380px) {
     .img-section {
-        margin-top: 34rem !important;
+        margin-top: 42rem !important;
     }
 }
