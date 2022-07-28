@@ -1957,6 +1957,7 @@ height: auto;
         width: 40vw;
         padding-top: 6px;
         padding-bottom: 4px;
+        border-radius: 1.5vw;
     }
 
     #workshop-card-img img{
