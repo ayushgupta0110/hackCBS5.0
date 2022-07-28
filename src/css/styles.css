@@ -895,7 +895,7 @@ lord-icon {
     /* background-color: #eee; */
     color: #444;
     cursor: pointer;
-    padding: 20px 20px;
+    padding: 15px 20px 15px 20px;
     width: 70%;
     border: none;
     outline: none;
@@ -903,13 +903,7 @@ lord-icon {
     margin: auto;
     margin-left: 11vw;
     font-size: 18px;
-}
-
-.faq-dropdown-answer {
-    margin: auto;
-    margin-left: 11vw;
-    width: 70%;
-    padding: auto;
+    line-height: 2;
 }
 
 .faq-dropdown-answer p {
@@ -924,24 +918,41 @@ lord-icon {
 /* Style the faq-dropdown panel. Note: hidden by default */
 
 .faq-dropdown-answer {
-    padding: 10px 20px 0;
-    background-color: white;
-    display: none;
+    background-color: transparent;
+    max-height: 0;
     overflow: hidden;
+    border-radius: 5px;
+    transition: max-height ease-in-out 600ms 50ms;
+    line-height: 1.5;
 }
 
-.faq-dropdown:after {
+.faq-dropdown-answer p {
+    padding: 10px;
+    background-color: white;
+    margin-bottom: unset;
+}
+
+.faq-dropdown-answer.active {
+    max-height: 46rem;
+}
+
+.faq-dropdown:before {
     content: '\02795';
     /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
+    font-size: 10px;
     color: #777;
     float: right;
+    margin-top: 4px;
     margin-left: 5px;
-    padding-top: 4px;
+    padding: 1.2px 5px;
+    border-radius: 50%;
+    border: 1px solid;
 }
 
-.faq-dropdown-container .active:after {
+.faq-dropdown-container .faq-dropdown.active:before {
     content: "\2796";
+    border-radius: 50%;
+    border: 1px solid;
     /* Unicode character for "minus" sign (-) */
 }
 /*************footer start *****************/
