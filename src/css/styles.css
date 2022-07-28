@@ -236,7 +236,7 @@ body{
     font-size: 13rem;
 }
 
-#About-heading>h2 {
+.about-heading>h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -492,7 +492,7 @@ lord-icon {
     height: 1.2vw;
 }
 
-#glimpse-heading>h2 {
+.glimpse-heading>h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -1607,16 +1607,6 @@ height: auto;
         }
     }
 
-    @media screen and (max-width:734px) {
-        .venue {
-            margin-left: 0;
-        }
-        .img-section{
-            margin-top: 18rem !important;
-        }
-    }
-
-    
     @media screen and (max-width:768px) {
         #workshop-card-text>h6 {
             margin-bottom: 0;
@@ -1649,6 +1639,15 @@ height: auto;
         }
         #mlh-logo {
             margin-left: 4rem;
+        }
+    }
+
+    @media screen and (max-width:734px) {
+        .venue {
+            margin-left: 0;
+        }
+        .img-section{
+            margin-top: 18rem !important;
         }
     }
 
@@ -1743,6 +1742,12 @@ height: auto;
         }
         .button-register{
             font-size: 1.2rem;
+        }
+        .about-heading>h2{
+            font-size: 7vw;
+        }
+        .glimpse-heading>h2{
+            font-size: 7vw;
         }
         .article {
             /* width: 128%; */
