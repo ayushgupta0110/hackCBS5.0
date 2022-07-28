@@ -240,7 +240,7 @@ body{
     font-size: 13rem;
 }
 
-#About-heading>h2 {
+.about-heading>h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -496,7 +496,7 @@ lord-icon {
     height: 1.2vw;
 }
 
-#glimpse-heading>h2 {
+.glimpse-heading>h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -529,72 +529,74 @@ lord-icon {
 }
 
 .workshop-card-container {
-    padding: 12vh 5vw;
+    padding: 12vh 12vw;
     display: grid;
     grid-template-columns: auto auto auto;
-    row-gap: 4%;
-    column-gap: 2%;
+    row-gap: 3%;
+    /* column-gap   : 2%; */
 }
 
 .workshop-card {
-    width: 27vw;
-    height: 40vw;
-    border-radius: 20px;
+    width: 23vw;
+    height: 32vw;
+    border-radius: 1.2vw;
     box-shadow: 0px 4px 25px 3px rgba(0, 0, 0, 0.25);
     background: linear-gradient(159.8deg, #F8F5FF 0%, #d6c6f8 88.57%);
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    padding: 20px;
+    padding: 1vw    ;
+}
+
+#workshop-card-title{
+    padding-top: 0.5vw;
 }
 
 #workshop-card-title>h3 {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 550;
-    font-size: 1.6vw;
-    line-height: 2vw;
-    margin-top: 10px;
-    color: #1F2631;
-}
-
-#workshop-card-text>h6 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.9vw;
-    line-height: 2vw;
-    color: #5F5B65;
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 1vw;
     margin-bottom: 0;
+    color: #1F2631;
 }
 
 #workshop-card-text {
     margin: 5px auto auto 5px;
 }
 
+#workshop-card-text>h6 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8vw;
+    line-height: 2vw;
+    /* margin-bottom: 20px; */
+    color: #5F5B65;
+}
+
 #workshop-timing {
     display: flex;
+    gap: 5px;
     flex-direction: column;
     margin-left: -59%;
 }
-
 #workshop-timing span {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 1vw;
-    line-height: 4vh;
+    /* line-height: 4vh; */
     color: #5F5B65;
 }
-
 .workshop-card>a {
     margin-top: auto
 }
-
 #workshop-card-img img {
-    height: 15vw;
-    width: 25vw;
+    height: 11vw;
+    width: 21vw;
 }
 
 #workshop-card-button {
@@ -608,7 +610,6 @@ lord-icon {
     justify-content: center;
     text-decoration: none;
 }
-
 #workshop-card-button>span {
     font-family: 'Roboto';
     font-style: normal;
@@ -616,7 +617,6 @@ lord-icon {
     font-size: 1.4vw;
     color: #F3EDFF;
 }
-
 #workshop-card-button:hover {
     background-color: #ee3192;
     text-decoration: none;
@@ -647,6 +647,7 @@ lord-icon {
     border-radius: 20px;
     margin-top: 35px;
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.25);
+    transition: 0.8s ease;
 }
 
 .prize:hover {
@@ -739,7 +740,7 @@ lord-icon {
     height: 100px;
 }
 
-.prize-img img:hover{
+.prize:hover .prize-img img{
     transform: rotate(360deg);
     transition: transform 0.8s;
 }
@@ -747,8 +748,9 @@ lord-icon {
 .speaker-links {
     position: absolute;
     bottom: -105px !important;
-    width: 87%;
-    height: 96px;
+    width: 100%;
+    border-radius: 15px;
+    height: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -969,7 +971,7 @@ lord-icon {
     flex-wrap: wrap;
 }
 
-.footer-item{
+.footer-item, .footer-social{
     margin-top: 2%;
     width: 20%;
 }
@@ -1190,7 +1192,7 @@ h6 {
     height: 266px;
 }
 
-@-moz-keyframes myfirst {
+@keyframes myfirst {
     0% {
         left: -25%;
     }
@@ -1566,7 +1568,7 @@ height: auto;
         }
 
         .f_size_18{
-            margin-top: 20%;
+            margin-top: 5%;
         }
 
         .swiper {
@@ -1575,6 +1577,11 @@ height: auto;
         }
     }
 
+    @media screen and (max-width: 998px){
+        .speaker-links{
+            height: 45px;
+        }
+    }
 
     
     @media screen and (max-width:876px) {
@@ -1615,20 +1622,11 @@ height: auto;
             margin-top: -2%;
         }
         .footer-social{
+            width: 100%;
             margin: -5% auto 2% auto;
         }
     }
 
-    @media screen and (max-width:734px) {
-        .venue {
-            margin-left: 0;
-        }
-        .img-section{
-            margin-top: 18rem !important;
-        }
-    }
-
-    
     @media screen and (max-width:768px) {
         #workshop-card-text>h6 {
             margin-bottom: 0;
@@ -1664,6 +1662,15 @@ height: auto;
         }
     }
 
+    @media screen and (max-width:734px) {
+        .venue {
+            margin-left: 0;
+        }
+        .img-section{
+            margin-top: 18rem !important;
+        }
+    }
+
     @media screen and (max-width: 680px){
         .card-img img {
             width: 110px;
@@ -1683,7 +1690,6 @@ height: auto;
         }
     }
 
-    
     @media screen and (max-width:624px) {
      .img-section {
         margin-top: 29rem !important;
@@ -1692,26 +1698,44 @@ height: auto;
 
     @media screen and (max-width:600px) {
         .workshop-card {
-            padding-top: 15px;
-            width: 37vw;
-            height: 50vw;
+            padding-top: 10px;
+            width: 30vw;
+            height: 40vw;
+            border-radius: 1.2vw;
         }
         #workshop-card-img img {
-            width: 34vw;
+            width: 27vw;
+            height: 15vw;
         }
         .workshop-card-container {
             grid-template-columns: auto auto;
+            row-gap: 4%;
         }
+
+        #workshop-card-title>h3 {
+            font-weight: 500;
+            font-size: 1.2vw;
+            line-height: 1vw;
+            margin-bottom: 0;
+        }
+
+        #workshop-card-text>h6 {
+            margin-bottom: 0;
+        }
+
         .swiper {
-            height: 380px !important;
+            height: 300px !important;
         }
         .swiper .swiper-button-next,
         .swiper .swiper-button-prev {
             display: none;
         }
+        
+        .new_footer_top .f-title{
+            margin-bottom: 20px;
+        }
     }
 
-    
     @media screen and (max-width:640px) {
         .card_title {
             font-size: 19px;
@@ -1745,6 +1769,33 @@ height: auto;
         }
     }
     
+    @media screen and (max-width:624px) {
+     .img-section {
+        margin-top: 29rem !important;
+      } 
+    }
+
+    @media screen and (max-width:600px) {
+        .workshop-card {
+            padding-top: 15px;
+            width: 37vw;
+            height: 50vw;
+        }
+        #workshop-card-img img {
+            width: 34vw;
+        }
+        .workshop-card-container {
+            grid-template-columns: auto auto;
+        }
+        .swiper {
+            height: 380px !important;
+        }
+        .swiper .swiper-button-next,
+        .swiper .swiper-button-prev {
+            display: none;
+        }
+    }
+    
     @media screen and (max-width: 545px) {
         .home_date-container p {
             font-size: 2rem;
@@ -1754,6 +1805,12 @@ height: auto;
         }
         .button-register{
             font-size: 1.2rem;
+        }
+        .about-heading>h2{
+            font-size: 7vw;
+        }
+        .glimpse-heading>h2{
+            font-size: 7vw;
         }
         .article {
             /* width: 128%; */
@@ -1776,12 +1833,17 @@ height: auto;
         }
     }
 
+    @media screen and (max-width : 481px){
+        .speaker-links {
+            height: 55px;
+        }
+    }
     @media screen and (max-width: 476px) {
         .content .article p {
             font-size: 14px;
            }
         .img-section {
-            margin-top: 29rem !important;
+            margin-top: 23rem !important;
         }
         .second h2,
         p {
@@ -1805,6 +1867,12 @@ height: auto;
         }
         .swiper {
             height: 300px !important;
+        }
+        .f_size_18{
+            margin-top: 6%;
+        }
+        .footer-social{
+            margin-top: 2%;
         }
     }
 
@@ -1834,7 +1902,7 @@ height: auto;
         }
 
         .f_size_18{
-            margin-top: 20%;
+            margin-top: 10%;
         }
 
         .row {
@@ -1870,12 +1938,21 @@ height: auto;
             width: 147px;
             height: 141px;
         }
+        .f_social_icon{
+            width: 100%;
+        }
     }
 
-    .social_icon {
-        display: table-row-group;
-    }
 
+    @media screen and (max-width:427px){
+          .second{
+            display: block !important;
+          }
+
+          .img-section {
+            margin-top: 36rem !important;
+        }
+    }
 
 @media screen and (max-width:380px){
     #About-heading>h2 {
@@ -1892,6 +1969,6 @@ height: auto;
 
 @media screen and (max-width:380px) {
     .img-section {
-        margin-top: 34rem !important;
+        margin-top: 42rem !important;
     }
 }
