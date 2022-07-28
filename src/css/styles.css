@@ -61,7 +61,7 @@ body{
 }
 
 .banner-parallax{
-    background-image: url("https://github.com/ayushgupta0110/hackCBS5.0/blob/main/assets/images/dark-bgd-img.jpg?raw=true");
+    background-image: url("https://github.com/ayushgupta0110/hackCBS5.0/blob/main/assets/images/dark-bg-img.jpg?raw=true");
     /* Set a specific height */
     min-height: 500px;
     /* Create the parallax scrolling effect */
