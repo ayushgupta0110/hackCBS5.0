@@ -1188,7 +1188,7 @@ h6 {
     height: 266px;
 }
 
-@-moz-keyframes myfirst {
+@keyframes myfirst {
     0% {
         left: -25%;
     }
@@ -1716,6 +1716,8 @@ height: auto;
         .swiper .swiper-button-next,
         .swiper .swiper-button-prev {
             display: none;
+        }
+        
         .new_footer_top .f-title{
             margin-bottom: 20px;
         }
