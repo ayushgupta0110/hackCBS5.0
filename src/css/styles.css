@@ -526,72 +526,74 @@ lord-icon {
 }
 
 .workshop-card-container {
-    padding: 12vh 5vw;
+    padding: 12vh 12vw;
     display: grid;
     grid-template-columns: auto auto auto;
-    row-gap: 4%;
-    column-gap: 2%;
+    row-gap: 3%;
+    /* column-gap   : 2%; */
 }
 
 .workshop-card {
-    width: 27vw;
-    height: 40vw;
-    border-radius: 20px;
+    width: 23vw;
+    height: 32vw;
+    border-radius: 1.2vw;
     box-shadow: 0px 4px 25px 3px rgba(0, 0, 0, 0.25);
     background: linear-gradient(159.8deg, #F8F5FF 0%, #d6c6f8 88.57%);
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    padding: 20px;
+    padding: 1vw    ;
+}
+
+#workshop-card-title{
+    padding-top: 0.5vw;
 }
 
 #workshop-card-title>h3 {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 550;
-    font-size: 1.6vw;
-    line-height: 2vw;
-    margin-top: 10px;
-    color: #1F2631;
-}
-
-#workshop-card-text>h6 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.9vw;
-    line-height: 2vw;
-    color: #5F5B65;
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 1vw;
     margin-bottom: 0;
+    color: #1F2631;
 }
 
 #workshop-card-text {
     margin: 5px auto auto 5px;
 }
 
+#workshop-card-text>h6 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8vw;
+    line-height: 2vw;
+    /* margin-bottom: 20px; */
+    color: #5F5B65;
+}
+
 #workshop-timing {
     display: flex;
+    gap: 5px;
     flex-direction: column;
     margin-left: -59%;
 }
-
 #workshop-timing span {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 1vw;
-    line-height: 4vh;
+    /* line-height: 4vh; */
     color: #5F5B65;
 }
-
 .workshop-card>a {
     margin-top: auto
 }
-
 #workshop-card-img img {
-    height: 15vw;
-    width: 25vw;
+    height: 11vw;
+    width: 21vw;
 }
 
 #workshop-card-button {
@@ -605,7 +607,6 @@ lord-icon {
     justify-content: center;
     text-decoration: none;
 }
-
 #workshop-card-button>span {
     font-family: 'Roboto';
     font-style: normal;
@@ -613,7 +614,6 @@ lord-icon {
     font-size: 1.4vw;
     color: #F3EDFF;
 }
-
 #workshop-card-button:hover {
     background-color: #ee3192;
     text-decoration: none;
