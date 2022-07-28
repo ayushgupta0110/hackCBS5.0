@@ -134,6 +134,10 @@ body{
     margin-bottom: 10%;
 }
 
+.home_date-container .fa-calendar{
+    font-size: 3vw;
+}
+
 
 .button-register {
     display: flex;
@@ -594,7 +598,7 @@ lord-icon {
 }
 
 .fa-calendar, .fa-clock{
-    font-size: 1vw !important
+    font-size: 1vw;
 }
 
 .workshop-card>a {
@@ -1634,6 +1638,10 @@ height: auto;
     }
 
     @media screen and (max-width:768px) {
+        .home_date-container .fa-calendar{
+            font-size: 4vw;
+        }
+
         #workshop-card-text>h6 {
             margin-bottom: 0;
         }
@@ -1824,6 +1832,10 @@ height: auto;
         }
     }
     @media screen and (max-width: 476px) {
+        .home_date-container .fa-calendar{
+            font-size: 5vw;
+        }
+
         .content .article p {
             font-size: 14px;
            }
@@ -1989,7 +2001,7 @@ height: auto;
     }
 
     .fa-calendar, .fa-clock{
-        font-size: 1.8vw !important;
+        font-size: 1.8vw;
     }
 
     #workshop-card-text {
