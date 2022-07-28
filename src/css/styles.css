@@ -1503,6 +1503,13 @@ height: auto;
     }
 
     @media screen and (max-width: 900px) {
+        .home_hackCBS>h1 {
+            font-size: 115px;
+            line-height: 160px;
+        }
+        .home_date-container p{
+            font-size: 2.5rem;
+        }
         .img-section img {
             height: 46vh;
             width: 31.3vh;
@@ -1576,13 +1583,6 @@ height: auto;
 
     
     @media screen and (max-width:768px) {
-        .home_hackCBS>h1 {
-            font-size: 115px;
-            line-height: 160px;
-        }
-        .home_date-container p{
-            font-size: 2.5rem;
-        }
         #workshop-card-text>h6 {
             margin-bottom: 0;
         }
