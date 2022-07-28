@@ -127,7 +127,6 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
-    width: 40%;
     margin-bottom: 10%;
 }
 
@@ -139,13 +138,14 @@ body{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
     padding: 0.9rem 3rem;
     color: #FFFFFF;
     /* background: linear-gradient(45deg, #f87bdd, #ff69de, #ee36ff, #b51afd, #891bff, #a824ff); */
     background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
     border-radius: 12px;
     border: none !important;
+    margin-right: 4rem;
 }
 
 .button-discord {
@@ -156,7 +156,7 @@ body{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
     padding: 0.7rem 3rem;
     color: #FFFFFF;
     background: #1F2631;
@@ -1461,6 +1461,9 @@ height: auto;
     
 
     @media screen and (max-width:1039px){
+        .home_hackCBS>h1 {
+            line-height: 190px;
+        }
         .about-us-section-content-container {
             flex-direction: column;
         }
@@ -1584,6 +1587,13 @@ height: auto;
 
     
     @media screen and (max-width:768px) {
+        .home_hackCBS>h1 {
+            font-size: 115px;
+            line-height: 160px;
+        }
+        .home_date-container p{
+            font-size: 2.5rem;
+        }
         #workshop-card-text>h6 {
             margin-bottom: 0;
         }
@@ -1697,6 +1707,15 @@ height: auto;
     }
     
     @media screen and (max-width: 545px) {
+        .home_date-container p {
+            font-size: 2rem;
+        }
+        .button-discord{
+            font-size: 1.2rem;
+        }
+        .button-register{
+            font-size: 1.2rem;
+        }
         .article {
             /* width: 128%; */
             margin-left: 6px;
@@ -1752,6 +1771,10 @@ height: auto;
     }
 
     @media screen and (max-width: 425px) {
+        .home_hackCBS>h1 {
+            font-size: 60px;
+            line-height: 100px;
+        }
 
         .container-themes .themes-card .theme-box {
             width: 15rem;
