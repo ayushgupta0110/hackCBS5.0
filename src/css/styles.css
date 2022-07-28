@@ -587,6 +587,11 @@ lord-icon {
     /* line-height: 4vh; */
     color: #5F5B65;
 }
+
+.fa-calendar, .fa-clock{
+    font-size: 1vw !important
+}
+
 .workshop-card>a {
     margin-top: auto
 }
@@ -597,7 +602,7 @@ lord-icon {
 
 #workshop-card-button {
     background: #f74ca4;
-    border-radius: 12px;
+    border-radius: 1vw;
     text-align: center;
     width: 100%;
     height: 10%;
@@ -1717,7 +1722,7 @@ height: auto;
         .swiper .swiper-button-prev {
             display: none;
         }
-        
+
         .new_footer_top .f-title{
             margin-bottom: 20px;
         }
@@ -1760,27 +1765,6 @@ height: auto;
      .img-section {
         margin-top: 29rem !important;
       } 
-    }
-
-    @media screen and (max-width:600px) {
-        .workshop-card {
-            padding-top: 15px;
-            width: 37vw;
-            height: 50vw;
-        }
-        #workshop-card-img img {
-            width: 34vw;
-        }
-        .workshop-card-container {
-            grid-template-columns: auto auto;
-        }
-        .swiper {
-            height: 380px !important;
-        }
-        .swiper .swiper-button-next,
-        .swiper .swiper-button-prev {
-            display: none;
-        }
     }
     
     @media screen and (max-width: 545px) {
@@ -1949,8 +1933,43 @@ height: auto;
 
 
 @media screen and (max-width:375px) {
+
+    .workshop-card-container {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
     .workshop-card {
-        height: 60vw;
+        height: 55vw;
+        width: 40vw;
+        padding-top: 6px;
+        padding-bottom: 4px;
+    }
+
+    #workshop-card-img img{
+        width: 37vw;
+        height: 23vw;
+    }
+
+    #workshop-card-text{
+        margin-bottom: 2vw;
+    }
+
+    #workshop-card-title>h3 {
+        font-size: 1.7vw;
+        padding-top: 4px;
+    }
+
+    #workshop-card-text>h6 {
+        font-size: 1.3vw;
+    }
+
+    #workshop-timing span {
+        font-size: 1.5vw;
+    }
+
+    .fa-calendar, .fa-clock{
+        font-size: 1.5vw !important;
     }
 }
 
