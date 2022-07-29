@@ -108,7 +108,7 @@ body{
     font-weight: 800;
     font-size: 19vw;
     line-height: 346px;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1696,6 +1696,10 @@ height: auto;
         }
         #mlh-logo {
             margin-left: 4rem;
+        }
+
+        .education-partners {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
