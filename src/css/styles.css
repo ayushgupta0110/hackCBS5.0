@@ -147,7 +147,7 @@ body{
     font-style: normal;
     font-weight: 500;
     font-size: 2rem;
-    padding: 0.9rem 3rem;
+    padding: 0.9rem 4rem;
     color: #FFFFFF;
     /* background: linear-gradient(45deg, #f87bdd, #ff69de, #ee36ff, #b51afd, #891bff, #a824ff); */
     background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
@@ -1689,6 +1689,10 @@ height: auto;
     }
 
     @media screen and (max-width: 680px){
+        .home_hackCBS>h1 {
+            font-size: 100px;
+            line-height: 120px;
+        }
         .card-img img {
             width: 110px;
             height: 110px;
@@ -1708,6 +1712,10 @@ height: auto;
     }
 
     @media screen and (max-width:624px) {
+        .home_hackCBS>h1 {
+            font-size: 90px;
+            line-height: 110px;
+        }
      .img-section {
         margin-top: 29rem !important;
       } 
@@ -1754,6 +1762,21 @@ height: auto;
     }
 
     @media screen and (max-width:640px) {
+        .home_hackCBS>h1 {
+            font-size: 90px;
+            line-height: 110px;
+        }
+
+        .home_button-container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-register{
+            margin-right: 0;
+            margin-bottom: 3rem;
+        }
         .card_title {
             font-size: 19px;
         }
@@ -1793,6 +1816,10 @@ height: auto;
     }
     
     @media screen and (max-width: 545px) {
+        .home_hackCBS>h1 {
+            font-size: 80px;
+            line-height: 100px;
+        }
         .home_date-container p {
             font-size: 2rem;
         }
@@ -1882,6 +1909,9 @@ height: auto;
             line-height: 100px;
         }
 
+        .button-register {
+            margin-bottom: 2rem;
+        }
         .container-themes .themes-card .theme-box {
             width: 15rem;
             height: 15rem;
@@ -1950,6 +1980,10 @@ height: auto;
     }
 
 @media screen and (max-width:380px){
+    .home_hackCBS>h1 {
+        font-size: 50px;
+        line-height: 90px;
+    }
     #About-heading>h2 {
         font-size: 31px;
     }
