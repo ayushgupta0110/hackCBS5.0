@@ -643,6 +643,7 @@ lord-icon {
     position: static;
     padding-top: 40px;
     display: grid;
+    row-gap: 51px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     /* grid-gap: 30px; */
@@ -679,6 +680,7 @@ lord-icon {
     /* padding: 4px; */
     margin-left: 20px;
     font-size: large;
+    margin-top: 37px;
 }
 
 .prize-info img {
@@ -688,6 +690,7 @@ lord-icon {
 .prize_title {
     margin-bottom: 8px;
     font-weight: 700;
+    color: #000;
 }
 
 .prize-info button {
@@ -1927,11 +1930,6 @@ height: auto;
             height: 38px;
         }
         .prize-img img {
-            border: 18px solid rgb(249, 139, 225);
-            object-fit: fill;
-            border-radius: 50%;
-            margin-top: 16px;
-            /* margin-left: 35px; */
             width: 147px;
             height: 141px;
         }
