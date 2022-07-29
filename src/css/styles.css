@@ -881,6 +881,7 @@ lord-icon {
     row-gap: 2vw;
     column-gap: 8vh;
     padding: 10vh 11vw;
+    text-align: center;
 }
 /** ***************** FAQs ****************** */
 
@@ -1542,6 +1543,10 @@ height: auto;
         .second{
             justify-content: space-between;
         }
+
+        .general-sponsors {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
     
     @media screen and (max-width: 1000px){
@@ -1647,6 +1652,10 @@ height: auto;
 
         #workshop-card-text>h6 {
             margin-bottom: 0;
+        }
+
+        .general-sponsors {
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .major-sponsors{
@@ -1832,6 +1841,16 @@ height: auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr) !important;
             grid-template-rows: repeat(3, auto);
+        }
+
+        .general-sponsors {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .education-partners {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 5vw 18vw;
         }
     }
 
