@@ -1628,12 +1628,13 @@ height: auto;
             margin-left: 0%;
         }
         .venue{
-            margin-bottom: 5rem;
+            margin-bottom: 2rem;
         }
         .content .article .second p {
             /* width: 204%; */
             white-space: nowrap;
             margin-bottom: 0%;
+            margin-left: 5rem;
         }
         .footer-item{
             margin-top: -2%;
