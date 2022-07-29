@@ -2069,16 +2069,15 @@ height: auto;
     }
 
     .workshop-card {
-        height: 60vw;
-        width: 45vw;
-        padding-top: 6px;
-        padding-bottom: 4px;
-        border-radius: 1.5vw;
+        height: 80vw;
+        width: 55vw;
+        padding: 10px 2vw 6px 2vw;
+        border-radius: 2vw;
     }
 
     #workshop-card-img img{
-        width: 42vw;
-        height: 27vw;
+        width: 52vw;
+        height: 35vw;
     }
 
     #workshop-card-text{
@@ -2086,17 +2085,18 @@ height: auto;
     }
 
     #workshop-card-title>h3 {
-        font-size: 2vw;
-        padding-top: 6px;
+        font-size: 2.5vw;
+        padding-top: 10px;
+        padding-bottom: 2px;
     }
 
     #workshop-card-text>h6 {
-        font-size: 1.6vw;
-        line-height: 7px;
+        font-size: 2vw;
+        line-height: 11px;
     }
 
     #workshop-timing span {
-        font-size: 1.8vw;
+        font-size: 2.1vw;
     }
 
     #workshop-card-text {
@@ -2104,7 +2104,7 @@ height: auto;
     }
 
     .fa-calendar, .fa-clock{
-        font-size: 1.8vw;
+        font-size: 2.2vw;
     }
 
     #workshop-card-text {
@@ -2112,7 +2112,7 @@ height: auto;
     }
 
     #workshop-card-button>span{
-        font-size: 2vw;
+        font-size: 2.7vw;
     }
 }
 
