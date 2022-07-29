@@ -134,6 +134,10 @@ body{
     margin-bottom: 10%;
 }
 
+.home_date-container .fa-calendar{
+    font-size: 3vw;
+}
+
 
 .button-register {
     display: flex;
@@ -237,14 +241,14 @@ body{
     display: inline-block;
     margin-top: 80px;
     margin-bottom: 62px;
-    font-size: 13rem;
+    font-size: 11rem;
 }
 
 .about-heading>h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 3.75vw;
     /* line-height: 76px; */
     color: #131314;
 }
@@ -381,7 +385,7 @@ lord-icon {
 .card-heading {
     /* position: absolute; */
     margin: 10px 0px 10px;
-    padding-top: 15vh;
+    padding-top: 5%;
 }
 
 .cards {
@@ -414,10 +418,10 @@ lord-icon {
 .card-img img {
     object-fit: cover;
     border-radius: 50%;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    width: 265px;
-    height: 265px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 250px;
 }
 
 .card-info {
@@ -454,7 +458,7 @@ lord-icon {
 }
 
 .glimpses-section {
-    padding: 60px 0;
+    padding: 6rem 0;
     background: rgba(31, 38, 49, 0.85);
 }
 
@@ -468,7 +472,7 @@ lord-icon {
 #decorator-headings {
     display: flex;
     flex-direction: row;
-    column-gap: 4vw;
+    column-gap: 3.75vw;
 }
 
 #purple-decorator>* {
@@ -525,14 +529,14 @@ lord-icon {
 .workshop {
     background-color: #1B262C;
     /* background: rgba(31, 38, 49, 0.9); */
-    padding-top: 15vh;
+    padding-top: 6rem;
 }
 
 .workshop-card-container {
-    padding: 12vh 12vw;
+    padding: 12vh 8vw;
     display: grid;
     grid-template-columns: auto auto auto;
-    row-gap: 3%;
+    row-gap: 4%;
     /* column-gap   : 2%; */
 }
 
@@ -547,6 +551,7 @@ lord-icon {
     /* justify-content: center; */
     align-items: center;
     padding: 1vw    ;
+    margin: 0 auto;
 }
 
 #workshop-card-title{
@@ -593,7 +598,7 @@ lord-icon {
 }
 
 .fa-calendar, .fa-clock{
-    font-size: 1vw !important
+    font-size: 1vw;
 }
 
 .workshop-card>a {
@@ -636,12 +641,13 @@ lord-icon {
 .prize-cards {
     margin-left: 76px;
     position: static;
-    padding-top: 40px;
+    padding-top: 5%;
     display: grid;
+    row-gap: 51px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     /* grid-gap: 30px; */
-    margin-bottom: 36px;
+    margin-bottom: 7%;
 }
 
 .prize {
@@ -674,6 +680,7 @@ lord-icon {
     /* padding: 4px; */
     margin-left: 20px;
     font-size: large;
+    margin-top: 37px;
 }
 
 .prize-info img {
@@ -683,6 +690,7 @@ lord-icon {
 .prize_title {
     margin-bottom: 8px;
     font-weight: 700;
+    color: #000;
 }
 
 .prize-info button {
@@ -812,7 +820,7 @@ lord-icon {
 /** ***************** OUR SPONSORS *****************  */
 
 .sponsor-section {
-    margin-top: 134px;
+    margin-top: 6rem;
 }
 
 .major-sponsors {
@@ -1520,7 +1528,7 @@ height: auto;
             margin: 0px;
             padding: 0px;
             margin-bottom: 10rem;
-            margin-top: 15rem;
+            margin-top: 4rem;
         }
         .about-us-icons {
             display: grid;
@@ -1633,6 +1641,10 @@ height: auto;
     }
 
     @media screen and (max-width:768px) {
+        .home_date-container .fa-calendar{
+            font-size: 4vw;
+        }
+
         #workshop-card-text>h6 {
             margin-bottom: 0;
         }
@@ -1823,6 +1835,10 @@ height: auto;
         }
     }
     @media screen and (max-width: 476px) {
+        .home_date-container .fa-calendar{
+            font-size: 5vw;
+        }
+
         .content .article p {
             font-size: 14px;
            }
@@ -1914,11 +1930,6 @@ height: auto;
             height: 38px;
         }
         .prize-img img {
-            border: 18px solid rgb(249, 139, 225);
-            object-fit: fill;
-            border-radius: 50%;
-            margin-top: 16px;
-            /* margin-left: 35px; */
             width: 147px;
             height: 141px;
         }
@@ -1988,7 +1999,7 @@ height: auto;
     }
 
     .fa-calendar, .fa-clock{
-        font-size: 1.8vw !important;
+        font-size: 1.8vw;
     }
 
     #workshop-card-text {
