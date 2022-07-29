@@ -248,7 +248,7 @@ body{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 3.75vw;
     /* line-height: 76px; */
     color: #131314;
 }
@@ -385,7 +385,7 @@ lord-icon {
 .card-heading {
     /* position: absolute; */
     margin: 10px 0px 10px;
-    padding-top: 15vh;
+    padding-top: 5%;
 }
 
 .cards {
@@ -418,10 +418,10 @@ lord-icon {
 .card-img img {
     object-fit: cover;
     border-radius: 50%;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    width: 265px;
-    height: 265px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 250px;
 }
 
 .card-info {
@@ -458,7 +458,7 @@ lord-icon {
 }
 
 .glimpses-section {
-    padding: 60px 0;
+    padding: 6rem 0;
     background: rgba(31, 38, 49, 0.85);
 }
 
@@ -472,7 +472,7 @@ lord-icon {
 #decorator-headings {
     display: flex;
     flex-direction: row;
-    column-gap: 4vw;
+    column-gap: 3.75vw;
 }
 
 #purple-decorator>* {
@@ -529,7 +529,7 @@ lord-icon {
 .workshop {
     background-color: #1F2631;
     /* background: rgba(31, 38, 49, 0.9); */
-    padding-top: 15vh;
+    padding-top: 6rem;
 }
 
 .workshop-card-container {
@@ -641,13 +641,13 @@ lord-icon {
 .prize-cards {
     margin-left: 76px;
     position: static;
-    padding-top: 40px;
+    padding-top: 5%;
     display: grid;
     row-gap: 51px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     /* grid-gap: 30px; */
-    margin-bottom: 36px;
+    margin-bottom: 7%;
 }
 
 .prize {
@@ -820,7 +820,7 @@ lord-icon {
 /** ***************** OUR SPONSORS *****************  */
 
 .sponsor-section {
-    margin-top: 134px;
+    margin-top: 6rem;
 }
 
 .major-sponsors {

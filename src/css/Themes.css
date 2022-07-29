@@ -4,13 +4,13 @@
 
 .themes {
     font-family: "Poppins", sans-serif;
-    padding-bottom: 10%;
+    padding-bottom: 7%;
 }
 
 .container-themes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 8%;
+    margin-top: 5%;
     row-gap: 4rem;
     padding: 0 5%;
 }
