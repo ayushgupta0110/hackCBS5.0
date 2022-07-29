@@ -1309,14 +1309,17 @@ h6 {
 
 #contact-email a {
     text-decoration: none;
+    line-height: 3rem;
 }
 
 #contact-weblink a {
     text-decoration: none;
+    line-height: 3rem;
 }
 
 #contact-phone a {
     text-decoration: none;
+    line-height: 3rem;
 }
 
 #contact-top-right-img {
@@ -1517,6 +1520,7 @@ height: auto;
         }
         .about-us-section-content-container {
             flex-direction: column;
+            /* row-gap: 20rem; */
         }
         .content {
             width: 100%;
@@ -1684,7 +1688,7 @@ height: auto;
             margin-left: 0;
         }
         .img-section{
-            margin-top: 18rem !important;
+            /* margin-top: 18rem !important; */
         }
     }
 
@@ -1708,6 +1712,39 @@ height: auto;
         }
         .f_size_18{
             margin-top: 10%;
+        }
+  
+        #contact-man-img{
+            display: none;
+        }
+        #contact-weblink a {
+            font-size: 2rem;
+        }
+        #contact-email a {
+            font-size: 2rem;
+        }
+
+        #contact-phone a{
+            /* line-height: 5rem; */
+            font-size: 2rem;
+        }
+
+        .contact-icon-circle {
+            width: 8.3vw;
+            height: 8.3vw;
+        }
+        /* .contact-container {
+            row-gap: 4.5vw;
+        } */
+        .fa-globe, .fa-envelope, .fa-phone {
+            font-size: 5vw !important;
+        }
+    }
+
+    @media screen and (max-width:756px){
+        .about-us-section-content-container {
+            flex-direction: column;
+            row-gap: 5rem;
         }
     }
 
@@ -1761,6 +1798,7 @@ height: auto;
         }
     }
 
+
     @media screen and (max-width:640px) {
         .home_hackCBS>h1 {
             font-size: 90px;
@@ -1811,7 +1849,7 @@ height: auto;
     
     @media screen and (max-width:624px) {
      .img-section {
-        margin-top: 29rem !important;
+        margin-top: 12rem !important;
       } 
     }
     
@@ -1852,7 +1890,7 @@ height: auto;
 
     @media screen and (max-width : 519px) {
         .img-section {
-            margin-top:  39rem !important;
+            margin-top:  22rem !important;
         }
     }
 
@@ -1870,7 +1908,7 @@ height: auto;
             font-size: 14px;
            }
         .img-section {
-            margin-top: 23rem !important;
+            margin-top: 9rem !important;
         }
         .second h2,
         p {
@@ -1974,8 +2012,9 @@ height: auto;
             display: block !important;
           }
 
-          .img-section {
-            margin-top: 36rem !important;
+          .about-us-section-content-container {
+            flex-direction: column;
+            row-gap: 20rem;
         }
     }
 
@@ -2047,6 +2086,6 @@ height: auto;
 
 @media screen and (max-width:380px) {
     .img-section {
-        margin-top: 42rem !important;
+        margin-top: 14rem !important;
     }
 }
