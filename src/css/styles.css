@@ -147,7 +147,7 @@ body{
     font-style: normal;
     font-weight: 500;
     font-size: 2rem;
-    padding: 0.9rem 3rem;
+    padding: 0.9rem 4rem;
     color: #FFFFFF;
     /* background: linear-gradient(45deg, #f87bdd, #ff69de, #ee36ff, #b51afd, #891bff, #a824ff); */
     background: linear-gradient(92.48deg, #FC5FD9 0.26%, #8D5DF5 39.81%, rgba(141, 93, 245, 0.5) 91.19%);
@@ -1310,14 +1310,17 @@ h6 {
 
 #contact-email a {
     text-decoration: none;
+    line-height: 3rem;
 }
 
 #contact-weblink a {
     text-decoration: none;
+    line-height: 3rem;
 }
 
 #contact-phone a {
     text-decoration: none;
+    line-height: 3rem;
 }
 
 #contact-top-right-img {
@@ -1518,6 +1521,7 @@ height: auto;
         }
         .about-us-section-content-container {
             flex-direction: column;
+            /* row-gap: 20rem; */
         }
         .content {
             width: 100%;
@@ -1629,12 +1633,13 @@ height: auto;
             margin-left: 0%;
         }
         .venue{
-            margin-bottom: 5rem;
+            margin-bottom: 2rem;
         }
         .content .article .second p {
             /* width: 204%; */
             white-space: nowrap;
             margin-bottom: 0%;
+            margin-left: 5rem;
         }
         .footer-item{
             margin-top: -2%;
@@ -1698,12 +1703,16 @@ height: auto;
         .venue {
             margin-left: 0;
         }
-        .img-section{
+        /* .img-section{
             margin-top: 18rem !important;
-        }
+        } */
     }
 
     @media screen and (max-width: 680px){
+        .home_hackCBS>h1 {
+            font-size: 100px;
+            line-height: 120px;
+        }
         .card-img img {
             width: 110px;
             height: 110px;
@@ -1726,9 +1735,46 @@ height: auto;
             row-gap: 10vw;
             padding: 11vh 12vw;
         }
+  
+        #contact-man-img{
+            display: none;
+        }
+        #contact-weblink a {
+            font-size: 2rem;
+        }
+        #contact-email a {
+            font-size: 2rem;
+        }
+
+        #contact-phone a{
+            /* line-height: 5rem; */
+            font-size: 2rem;
+        }
+
+        .contact-icon-circle {
+            width: 8.3vw;
+            height: 8.3vw;
+        }
+        /* .contact-container {
+            row-gap: 4.5vw;
+        } */
+        .fa-globe, .fa-envelope, .fa-phone {
+            font-size: 5vw !important;
+        }
+    }
+
+    @media screen and (max-width:756px){
+        .about-us-section-content-container {
+            flex-direction: column;
+            row-gap: 5rem;
+        }
     }
 
     @media screen and (max-width:624px) {
+        .home_hackCBS>h1 {
+            font-size: 90px;
+            line-height: 110px;
+        }
      .img-section {
         margin-top: 29rem !important;
       } 
@@ -1774,7 +1820,23 @@ height: auto;
         }
     }
 
+
     @media screen and (max-width:640px) {
+        .home_hackCBS>h1 {
+            font-size: 90px;
+            line-height: 110px;
+        }
+
+        .home_button-container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-register{
+            margin-right: 0;
+            margin-bottom: 3rem;
+        }
         .card_title {
             font-size: 19px;
         }
@@ -1809,11 +1871,15 @@ height: auto;
     
     @media screen and (max-width:624px) {
      .img-section {
-        margin-top: 29rem !important;
+        margin-top: 12rem !important;
       } 
     }
     
     @media screen and (max-width: 545px) {
+        .home_hackCBS>h1 {
+            font-size: 80px;
+            line-height: 100px;
+        }
         .home_date-container p {
             font-size: 2rem;
         }
@@ -1856,7 +1922,7 @@ height: auto;
 
     @media screen and (max-width : 519px) {
         .img-section {
-            margin-top:  39rem !important;
+            margin-top:  22rem !important;
         }
     }
 
@@ -1874,7 +1940,7 @@ height: auto;
             font-size: 14px;
            }
         .img-section {
-            margin-top: 23rem !important;
+            margin-top: 9rem !important;
         }
         .second h2,
         p {
@@ -1913,6 +1979,9 @@ height: auto;
             line-height: 100px;
         }
 
+        .button-register {
+            margin-bottom: 2rem;
+        }
         .container-themes .themes-card .theme-box {
             width: 15rem;
             height: 15rem;
@@ -1975,12 +2044,17 @@ height: auto;
             display: block !important;
           }
 
-          .img-section {
-            margin-top: 36rem !important;
+          .about-us-section-content-container {
+            flex-direction: column;
+            row-gap: 20rem;
         }
     }
 
 @media screen and (max-width:380px){
+    .home_hackCBS>h1 {
+        font-size: 50px;
+        line-height: 90px;
+    }
     #About-heading>h2 {
         font-size: 31px;
     }
@@ -2044,6 +2118,6 @@ height: auto;
 
 @media screen and (max-width:380px) {
     .img-section {
-        margin-top: 42rem !important;
+        margin-top: 14rem !important;
     }
 }
