@@ -1898,7 +1898,7 @@ height: auto;
     @media screen and (max-width: 545px) {
         .home_date-container p {
             font-size: 2rem;
-            margin-top: 8rem;
+            margin-top: 12rem;
         }
         .home_hackCBS .text{
             font-size: 7vw;
