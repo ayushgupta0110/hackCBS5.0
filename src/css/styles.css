@@ -42,7 +42,7 @@ body{
     text-decoration: none;
 }
 
-#mlh-logo{
+.mlh-logo{
     width: 100%;
     margin-left: 20%;
 }
@@ -1669,11 +1669,11 @@ height: auto;
             margin-right: 12vw;
         }
 
-        #mlh-trust-badge{
+        .mlh-trust-badge{
             right: 0 !important;
         }
 
-        #mlh-logo{
+        .mlh-logo{
             margin-left: -1rem;
         }
 
