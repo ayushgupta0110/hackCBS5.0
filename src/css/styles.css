@@ -59,7 +59,7 @@ body{
     background: rgba(31, 38, 49, 0.9);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-top:12rem;
 }
@@ -76,10 +76,10 @@ body{
 }
 
 .home_main-text {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
-    /* margin-top: 2%; */
+    margin-top: 2%;
 }
 
 .home_hackCBS>h1 {
@@ -92,6 +92,7 @@ body{
 }
 
 .home_hackCBS .text {
+    width: fit-content;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -102,12 +103,12 @@ body{
     padding-left: 0.8rem;
 }
 
-.home_main-text>h1 {
+.home_hackCBS>h1>span {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
-    font-size: 19vw;
-    line-height: 346px;
+    font-size: 16vw;
+    /* line-height: 346px; */
     padding-left: 1.5rem;
     background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
     -webkit-background-clip: text;
@@ -123,7 +124,7 @@ body{
     font-size: 3rem;
     /* line-height: 47px; */
     color: #F8F5FF;
-    margin-top: 3%;
+    margin-top: 15%;
 }
 
 .home_button-container {
@@ -131,7 +132,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
-    margin-bottom: 10%;
+    margin-bottom: 6rem;
 }
 
 .home_date-container .fa-calendar{
@@ -846,9 +847,8 @@ lord-icon {
 }
 
 #sponsor-card,
-#sponsor-card-min,
+.sponsor-card-min,
 #sponsor-edu-card {
-    height: 120px;
     margin-top: 10px;
     box-shadow: 1px 2px 5px 2px rgb(0 0 0 / 20%);
     background: rgb(248 245 255);
@@ -859,8 +859,9 @@ lord-icon {
     height: 150px;
 }
 
-#sponsor-min {
-    height: 120px;
+.sponsor-card-min, 
+#sponsor-edu-card{
+    height: 10rem;
 }
 
 .general-sponsors {
@@ -1222,7 +1223,7 @@ h6 {
     padding-bottom: 8vh;
 }
 
-#contact-heading {
+.contact-heading {
     background: linear-gradient(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
     ;
     padding-left: 4vw;
@@ -1230,7 +1231,7 @@ h6 {
     position: relative;
 }
 
-#contact-heading>span {
+.contact-heading>span {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
@@ -1519,6 +1520,10 @@ height: auto;
         .home_hackCBS>h1 {
             line-height: 190px;
         }
+        .home_hackCBS>h1>span{
+            font-size: 17rem;
+            padding-left: 1rem;
+        }
         .about-us-section-content-container {
             flex-direction: column;
             /* row-gap: 20rem; */
@@ -1575,8 +1580,12 @@ height: auto;
 
     @media screen and (max-width: 900px) {
         .home_hackCBS>h1 {
-            font-size: 115px;
-            line-height: 160px;
+            font-size: 16vw;
+            line-height: 110px;
+        }
+        .home_hackCBS>h1>span{
+            font-size: 18vw;
+            padding-left: 0.6rem;
         }
         .home_date-container p{
             font-size: 2.5rem;
@@ -1651,8 +1660,21 @@ height: auto;
     }
 
     @media screen and (max-width:768px) {
+        .navbar>.container-fluid{
+            justify-content: flex-end;
+        }
+
+        .navbar-toggler{
+            margin-left: auto;
+            margin-right: 12vw;
+        }
+
         .home_date-container .fa-calendar{
             font-size: 4vw;
+        }
+
+        .about-us-icons{
+            margin-top: 12vh;
         }
 
         #workshop-card-text>h6 {
@@ -1713,10 +1735,6 @@ height: auto;
     }
 
     @media screen and (max-width: 680px){
-        .home_hackCBS>h1 {
-            font-size: 100px;
-            line-height: 120px;
-        }
         .card-img img {
             width: 110px;
             height: 110px;
@@ -1776,8 +1794,11 @@ height: auto;
 
     @media screen and (max-width:624px) {
         .home_hackCBS>h1 {
-            font-size: 90px;
+            font-size: 15vw;
             line-height: 110px;
+        }
+        .home_hackCBS>h1>span{
+            font-size: 17vw;
         }
      .img-section {
         margin-top: 29rem !important;
@@ -1826,20 +1847,15 @@ height: auto;
 
 
     @media screen and (max-width:640px) {
-        .home_hackCBS>h1 {
-            font-size: 90px;
-            line-height: 110px;
-        }
-
         .home_button-container{
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: initial;
         }
 
         .button-register{
             margin-right: 0;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
         }
         .card_title {
             font-size: 19px;
@@ -1880,12 +1896,15 @@ height: auto;
     }
     
     @media screen and (max-width: 545px) {
-        .home_hackCBS>h1 {
-            font-size: 80px;
-            line-height: 100px;
-        }
         .home_date-container p {
             font-size: 2rem;
+            margin-top: 8rem;
+        }
+        .home_hackCBS .text{
+            font-size: 7vw;
+            padding: 0;
+            margin: -1rem auto 0 auto;
+            padding-left: auto;
         }
         .button-discord{
             font-size: 1.2rem;
@@ -1913,20 +1932,21 @@ height: auto;
             grid-template-rows: repeat(3, auto);
         }
 
-        .general-sponsors {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
         .education-partners {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            padding: 5vw 18vw;
+            padding: 5vw 6vw;
         }
     }
 
     @media screen and (max-width : 519px) {
+        .navbar-toggler{
+            margin-right: 16vw;
+        }
         .img-section {
             margin-top:  22rem !important;
+        }
+        .sponsor-card-min, 
+        #sponsor-edu-card{
+            height: 6rem;
         }
     }
 
@@ -1935,7 +1955,17 @@ height: auto;
             height: 55px;
         }
     }
+
     @media screen and (max-width: 476px) {
+        .home_hackCBS>h1 {
+            font-size: 15vw;
+            line-height: 100px;
+        }
+
+        .home_hackCBS>h1>span{
+            font-size: 17vw;
+        }
+
         .home_date-container .fa-calendar{
             font-size: 5vw;
         }
@@ -1969,6 +1999,11 @@ height: auto;
         .swiper {
             height: 300px !important;
         }
+        .contact-heading{
+            height: 3rem;
+            padding:4vw auto;
+        }
+
         .f_size_18{
             margin-top: 6%;
         }
@@ -1977,15 +2012,13 @@ height: auto;
         }
     }
 
-    @media screen and (max-width: 425px) {
-        .home_hackCBS>h1 {
-            font-size: 60px;
-            line-height: 100px;
+    @media screen and (max-width: 445px) {
+        .about-us-icons{
+            margin-top: 4vh;
         }
+    }
 
-        .button-register {
-            margin-bottom: 2rem;
-        }
+    @media screen and (max-width: 425px) {
         .container-themes .themes-card .theme-box {
             width: 15rem;
             height: 15rem;
@@ -2054,15 +2087,20 @@ height: auto;
         }
     }
 
-@media screen and (max-width:380px){
-    .home_hackCBS>h1 {
-        font-size: 50px;
-        line-height: 90px;
+    @media screen and (max-width:380px){
+        .navbar-toggler{
+            margin-right: 20vw;
+        }
+        .home_container{
+            padding-top: 12rem;
+        }
+        .about-us-icons{
+            margin-top: 10vh;
+        }
+        .img-section {
+            margin-top: 14rem !important;
+        }
     }
-    #About-heading>h2 {
-        font-size: 31px;
-    }
-}
 
 
 @media screen and (max-width:375px) {
@@ -2117,11 +2155,5 @@ height: auto;
 
     #workshop-card-button>span{
         font-size: 2.7vw;
-    }
-}
-
-@media screen and (max-width:380px) {
-    .img-section {
-        margin-top: 14rem !important;
     }
 }
