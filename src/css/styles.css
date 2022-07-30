@@ -1592,6 +1592,14 @@ height: auto;
             margin-right: 12vw;
         }
 
+        .mlh-trust-badge{
+            right: 0 !important;
+        }
+
+        .mlh-logo{
+            margin-left: -1rem;
+        }
+        
     }
 
     @media screen and (max-width: 900px) {
@@ -1676,14 +1684,6 @@ height: auto;
 
         .container-fluid>.navbar-collapse{
             margin-left: 5px;
-        }
-
-        .mlh-trust-badge{
-            right: 0 !important;
-        }
-
-        .mlh-logo{
-            margin-left: -1rem;
         }
 
         .home_date-container .fa-calendar{
