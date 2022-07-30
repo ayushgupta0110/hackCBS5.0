@@ -1578,6 +1578,22 @@ height: auto;
         }
     }
 
+    @media screen and (max-width: 998px){
+        .speaker-links{
+            height: 45px;
+        }
+
+        .navbar>.container-fluid{
+            justify-content: flex-end;
+        }
+
+        .navbar-toggler{
+            margin-left: auto;
+            margin-right: 12vw;
+        }
+
+    }
+
     @media screen and (max-width: 900px) {
         .home_hackCBS>h1 {
             font-size: 16vw;
@@ -1605,12 +1621,6 @@ height: auto;
         .swiper {
             margin-top: unset;
             height: 400px;
-        }
-    }
-
-    @media screen and (max-width: 998px){
-        .speaker-links{
-            height: 45px;
         }
     }
 
@@ -1662,14 +1672,6 @@ height: auto;
     @media screen and (max-width:768px) {
         .navbar{
             border-radius: 0 0 10px 10px;
-        }
-        .navbar>.container-fluid{
-            justify-content: flex-end;
-        }
-
-        .navbar-toggler{
-            margin-left: auto;
-            margin-right: 12vw;
         }
 
         .container-fluid>.navbar-collapse{
