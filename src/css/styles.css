@@ -1670,7 +1670,7 @@ height: auto;
         }
 
         #mlh-trust-badge{
-            right: 0;
+            right: 0 !important;
         }
 
         #mlh-logo{
@@ -1724,10 +1724,6 @@ height: auto;
             width: 88%;
             margin-left: 8%;
         }
-        #mlh-logo {
-            margin-left: 4rem;
-        }
-
         .education-partners {
             grid-template-columns: repeat(2, 1fr);
         }
