@@ -1599,7 +1599,7 @@ height: auto;
         .mlh-logo{
             margin-left: -1rem;
         }
-        
+
     }
 
     @media screen and (max-width: 900px) {
@@ -1991,11 +1991,11 @@ height: auto;
             font-size: 14px;
            }
         .img-section {
-            margin-top: 9rem !important;
+            margin-top: 5rem !important;
         }
-        .second h2,
-        p {
-            font-size: 1.5rem;
+        .subpart h2{
+            font-size: 2rem;
+            margin: 0.25rem 0 0 0.25rem;
         }
         .cards {
             row-gap: 2rem;
@@ -2031,7 +2031,7 @@ height: auto;
 
     @media screen and (max-width: 445px) {
         .about-us-icons{
-            margin-top: 20vh;
+            margin-top: 10vh;
         }
     }
 
@@ -2044,7 +2044,10 @@ height: auto;
             width: 15rem;
         }
         .about-us-icons{
-            margin-top: 4vh;
+            margin-top: 0;
+        }
+        .subpart{
+            justify-content: flex-start;
         }
         .second {
             width: 200px;
@@ -2092,6 +2095,13 @@ height: auto;
         }
         .f_social_icon{
             width: 100%;
+        }
+        .subpart h2{
+            font-size: 2rem;
+            margin: 0.25rem 0 0 1rem;
+        }
+        .content .article .second p{
+            margin-left: 4rem;
         }
     }
 
