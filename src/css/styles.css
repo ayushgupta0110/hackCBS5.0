@@ -1898,7 +1898,7 @@ height: auto;
     @media screen and (max-width: 545px) {
         .home_date-container p {
             font-size: 2rem;
-            margin-top: 12rem;
+            margin-top: 10rem;
         }
         .home_hackCBS .text{
             font-size: 7vw;
@@ -1930,6 +1930,7 @@ height: auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr) !important;
             grid-template-rows: repeat(3, auto);
+            margin-top: 0;
         }
 
         .education-partners {
@@ -2014,7 +2015,7 @@ height: auto;
 
     @media screen and (max-width: 445px) {
         .about-us-icons{
-            margin-top: 4vh;
+            margin-top: 20vh;
         }
     }
 
@@ -2025,6 +2026,9 @@ height: auto;
         }
         .container-themes .themes-card .theme-box .theme-content {
             width: 15rem;
+        }
+        .about-us-icons{
+            margin-top: 4vh;
         }
         .second {
             width: 200px;
